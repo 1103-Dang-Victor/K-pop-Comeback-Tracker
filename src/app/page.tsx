@@ -1,23 +1,23 @@
-import { ComboBox } from "react-aria-components";
-import { Button, Calendar, CalendarCell, CalendarGrid, CalendarGridBody, CalendarGridHeader,
-  CalendarHeaderCell, Heading, Text } from "react-aria-components";
+import CalendarComponent from "./components/calendar";
+
 
 export default function Home() {
   return (
     <>
-
-        <div>
-          <b><h1>Filters</h1></b>
+      <div className="text-lg flex flex-row flex-wrap gap-2">
+        <div className="border-black border-4 p-4">
+          <h1 className="font-bold">Filters</h1>
           <p>Here is some text for the selection sides.</p>
         </div>
 
-        <div>
-        <b><h1>Calendar</h1></b>
-          <p>Here is some text for the actual calendar itself.</p>
+        <div className="text-lg border-black border-4 p-4">
+          <h1 className="font-bold">Calendar</h1>
+
+          <CalendarComponent></CalendarComponent>
 
         </div>
-
-      </>
+      </div>
+    </>
 
   );
 }

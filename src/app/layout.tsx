@@ -14,15 +14,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <header>
-            <b><p>K-pop Comebacks Tracker</p></b>
+      <body className="m-3">
+        <header className="border-blue-500 border-4">
+          <p>This is the header!</p>
+          <p className="font-bold text-xl p-3">K-pop Comebacks Tracker</p>
         </header>
         
         {children}
 
-        <footer>
-          <p>Footer information.</p>
+        <footer className="border-blue-500 border-4">
+          <p className="font-bold text-xl p-3">This is the footer!</p>
         </footer>
       </body>
     </html>
