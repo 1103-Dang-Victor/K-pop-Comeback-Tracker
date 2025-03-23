@@ -6,22 +6,27 @@ import { Button, Calendar, CalendarCell, CalendarGrid, CalendarGridBody, Calenda
 
 const CalendarComponent = () => {
     return (
-        <div>
-            <p>Here is some text for the actual calendar itself.</p>
-            
-            <Calendar aria-label="MainCalendar">
-                <header>
-                    <Button slot="previous">◀</Button>
-                    <Heading />
-                    <Button slot="next">▶</Button>
-            </header>
+        <>
+            <Calendar aria-label="MainCalendar" className={"overflow-x-hidden"}>
+                <header className="flex p-2 m-3 w-auto justify-between">
+                    <Button slot="previous" className={"mx-5 p-3"}>◀</Button>
+                    <Heading className="w-fit"/> {/*Calendar Month Label*/}
+                    <Button slot="next" className={"mx-5 p-3"}>▶</Button>
+                </header>
 
-            <CalendarGrid>
-                {(date) => <CalendarCell date={date} />}
-            </CalendarGrid>
+                <CalendarGrid className="flex m-2 p-2 justify-evenly w-auto">
+                    <CalendarGridHeader className="hidden">
+                        {(day) => <CalendarHeaderCell />}
+                    </CalendarGridHeader>
+
+                    <CalendarGridBody>
+                        {(date) => <CalendarCell date={date} className={"text-center p-2.5 m-2.5"}/>}
+                    </CalendarGridBody>
+                    
+                </CalendarGrid>
 
             </Calendar>
-        </div>
+        </>
     )
 }
 
