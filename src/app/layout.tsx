@@ -14,9 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="m-auto">
-        <header className="border-blue-500 border-4">
-          <p className="font-bold text-xl p-3">K-pop Comebacks Tracker</p>
+      <body className="m-auto text-xl md:text-lg bg-[#fffef7]">
+        <header className="border-blue-500 border-4 w-fit">
+          <p className="font-bold p-3 text-2xl text-left md:text-xl" >K-pop Comebacks Tracker</p>
         </header>
         
         {children}

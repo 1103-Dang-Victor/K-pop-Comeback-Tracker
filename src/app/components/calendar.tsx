@@ -1,5 +1,4 @@
 'use client';
-
 import React from "react";
 import { Button, Calendar, CalendarCell, CalendarGrid, CalendarGridBody, CalendarGridHeader,
     CalendarHeaderCell, Heading, Text } from "react-aria-components";
@@ -22,7 +21,6 @@ const CalendarComponent = () => {
                     <CalendarGridBody>
                         {(date) => <CalendarCell date={date} className={"text-center p-2.5 m-2.5"}/>}
                     </CalendarGridBody>
-                    
                 </CalendarGrid>
 
             </Calendar>

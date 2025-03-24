@@ -1,4 +1,13 @@
 @tailwind base;
 @tailwind components;
+
+@theme {
+    --color-midnightBlack: #02010A;
+    --color-oxfordBlue: #04052E;
+    --color-darkPurple: #140152;
+    --color-dukeBlue: #0D00A4;
+    --color-platinumWhite: #DFDFDF;
+}
+
 @tailwind utilities;
 
