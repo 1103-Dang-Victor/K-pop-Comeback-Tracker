@@ -2,9 +2,10 @@ import React from "react";
 
 const EventCardComponent = () => {
     return  (
-        <div>
-            
-        </div>
+        <>
+            <h1 className="m-4 p-2">Results</h1>
+            <div></div>
+        </>
     )
 }
 

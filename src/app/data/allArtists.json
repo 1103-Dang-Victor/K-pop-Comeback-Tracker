@@ -1,0 +1,35 @@
+{
+    "artists": [
+        {
+            "NCT": [
+                {
+                    "artist":"NCT WISH",
+                    "title":"The 2nd Mini Album - poppop",
+                    "releaseDate": "4/14/25",
+                    "promoType": null,
+                    "songType":"album"
+                },
+
+                {
+                    "artist":"MARK",
+                    "title":"The 1st Album - The Firstfruit",
+                    "releaseDate": "4/7/25",
+                    "promoType":"MV",
+                    "songType":"album"
+                }
+            ]
+        },
+
+        {
+            "Kep1er": [
+                {
+                    "artist":"Kep1er",
+                    "title":"Japan 1st EP - <AGAINST THE WORLD>",
+                    "releaseDate": "4/14/25",
+                    "promoType": null,
+                    "songType":"EP"
+                }
+            ]
+        }
+    ]
+}
