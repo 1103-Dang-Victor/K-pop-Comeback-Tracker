@@ -1,13 +1,25 @@
 @tailwind base;
 @tailwind components;
 
-@theme {
-    --color-midnightBlack: #02010A;
-    --color-oxfordBlue: #04052E;
-    --color-darkPurple: #140152;
-    --color-dukeBlue: #0D00A4;
-    --color-platinumWhite: #DFDFDF;
+@layer base {
+    :root {
+        --color-textBase: #02010A;
+        --color-primary: #ececec;
+        --color-secondary: #746f72;
+        --color-accent: #05a8aa;
+        --color-darkerAccent: #2D898B;
+    }
+
+    .dark {
+        --color-textBase: #ececec;
+        --color-primary: #02010A;
+        --color-secondary: #746f72;
+        --color-accent: #05a8aa;
+        --color-darkerAccent: #2D898B;
+    }
 }
+
+
 
 @tailwind utilities;
 
