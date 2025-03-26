@@ -8,9 +8,9 @@ const CalendarComponent = () => {
         <>
             <Calendar aria-label="MainCalendar" className={"overflow-x-hidden"}>
                 <header className="flex p-2 m-3 w-auto justify-between">
-                    <Button slot="previous" className={"mx-5 p-3"}>◀</Button>
+                    <Button slot="previous" className={"mx-5 p-3 border-2 border-solid rounded-lg border-tBase"}>Back</Button>
                     <Heading className="w-fit"/> {/*Calendar Month Label*/}
-                    <Button slot="next" className={"mx-5 p-3"}>▶</Button>
+                    <Button slot="next" className={"mx-5 p-3 border-2 border-solid rounded-lg border-tBase"}>Next</Button>
                 </header>
 
                 <CalendarGrid className="flex m-2 p-2 justify-evenly w-auto">

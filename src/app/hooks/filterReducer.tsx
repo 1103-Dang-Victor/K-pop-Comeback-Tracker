@@ -30,7 +30,6 @@ export const filterReducer = (state: typeof initialFilters, action: ReducerActio
                     updatedFilters = [...state[category], value];
                 }
             }
-            console.log(state);
             return {...state, [category]: updatedFilters};
         case ReducerActionType.songFilterEvent:
             if (category == "songType") {
@@ -40,9 +39,9 @@ export const filterReducer = (state: typeof initialFilters, action: ReducerActio
                     updatedFilters = [...state[category], value];
                 }
             }
-            console.log(state);
             return {...state, [category]: updatedFilters};
         default:
             return state;
     }
 }
+
