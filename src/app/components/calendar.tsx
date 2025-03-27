@@ -7,7 +7,7 @@ const CalendarComponent = () => {
     return (
         <>
             <Calendar aria-label="MainCalendar" className={"overflow-x-hidden"}>
-                <header className="flex p-2 m-3 w-auto justify-between">
+                <header className="flex p-2 m-3 justify-between">
                     <Button slot="previous" className={`mx-5 p-3 border-2 border-solid rounded-lg border-tBase 
                         hover:shadow-md hover:shadow-tBase active:scale-95`}>Back</Button>
                     <Heading className="w-fit border-b-2 border-tBase"/> {/*Calendar Month Label*/}
