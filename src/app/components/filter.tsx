@@ -50,8 +50,30 @@ const FilterComponent = () => {
                             }}
                         >MV</ToggleButton>
                         
-                        <ToggleButton className={"p-3 m-2 border-2 border-solid rounded-lg border-tBase"}>Teaser</ToggleButton>
-                        <ToggleButton className={"p-3 m-2 border-2 border-solid rounded-lg border-tBase"}>Visualizer</ToggleButton>
+                        <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
+                        hover:shadow-md hover:shadow-tBase 
+                        ${filters.promoType.includes("teaser") ? "bg-accentTwo text-primary font-bold dark:text-tBase" : ""}`}
+                            isSelected={filters.promoType.includes("teaser")}
+                            onPress={() => {
+                                filterDispatch({
+                                    type: ReducerActionType.promoFilterEvent,
+                                    payload: {category: "promoType", value: "teaser", preValue: filters.promoType.includes("teaser")}
+                                })
+                            }}
+                        >Teaser</ToggleButton>
+                        
+                        <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
+                        hover:shadow-md hover:shadow-tBase 
+                        ${filters.promoType.includes("visualizer") ? "bg-accentThree text-primary font-bold dark:text-tBase" : ""}`}
+                            isSelected={filters.promoType.includes("visualizer")}
+                            onPress={() => {
+                                filterDispatch({
+                                    type: ReducerActionType.promoFilterEvent,
+                                    payload: {category: "promoType", value: "visualizer", preValue: filters.promoType.includes("visualizer")}
+                                })
+                            }}
+                        >Visualizer</ToggleButton>
+                
                     </div>
 
                     <div className="songFilterToggles">
@@ -62,9 +84,11 @@ const FilterComponent = () => {
                     </div>
                 </div>
                 
+                <Button className={`p-3 border-2 border-solid rounded-lg border-tBase 
+                        hover:shadow-md hover:shadow-tBase`}> Apply </Button>
             </div>
             
-
+            
         </>
     )
 }

@@ -11,8 +11,11 @@ export default {
       colors: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
+        secondaryTwo: "var(--color-secondaryTwo)",
+        secondaryThree: "var(--color-secondaryThree)",
         accent: "var(--color-accent)",
-        darkerAccent: "var(--color-darkerAccent)",
+        accentTwo: "var(--color-accentTwo)",
+        accentThree: "var(--color-accentThree)",
         tBase: "var(--color-textBase)",
       },
     },

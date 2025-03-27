@@ -2,7 +2,9 @@ import React, { useReducer, useState} from "react";
 import releaseData from "../data/allArtists.json"
 
 function selectFilters() {
-    const artists = releaseData;
+    const data = releaseData;
+    let artistArray: string[];
+
     
 }
 

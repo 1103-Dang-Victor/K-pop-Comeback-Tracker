@@ -8,18 +8,21 @@ const CalendarComponent = () => {
         <>
             <Calendar aria-label="MainCalendar" className={"overflow-x-hidden"}>
                 <header className="flex p-2 m-3 w-auto justify-between">
-                    <Button slot="previous" className={"mx-5 p-3 border-2 border-solid rounded-lg border-tBase"}>Back</Button>
-                    <Heading className="w-fit"/> {/*Calendar Month Label*/}
-                    <Button slot="next" className={"mx-5 p-3 border-2 border-solid rounded-lg border-tBase"}>Next</Button>
+                    <Button slot="previous" className={`mx-5 p-3 border-2 border-solid rounded-lg border-tBase 
+                        hover:shadow-md hover:shadow-tBase active:scale-95`}>Back</Button>
+                    <Heading className="w-fit border-b-2 border-tBase"/> {/*Calendar Month Label*/}
+                    <Button slot="next" className={`mx-5 p-3 border-2 border-solid rounded-lg border-tBase 
+                        hover:shadow-md hover:shadow-tBase active:scale-95`}>Next</Button>
                 </header>
 
-                <CalendarGrid className="flex m-2 p-2 justify-evenly w-auto">
+                <CalendarGrid className="flex m-2 p-3 justify-evenly w-auto">
                     <CalendarGridHeader className="hidden">
                         {(day) => <CalendarHeaderCell />}
                     </CalendarGridHeader>
 
                     <CalendarGridBody>
-                        {(date) => <CalendarCell date={date} className={"text-center p-2.5 m-2.5"}/>}
+                        {(date) => <CalendarCell date={date} className={`text-center p-3 m-1 rounded-md text-tBase dark:text-tBase
+                            data-[selected]:bg-accent data-[selected]:text-primary data-[outside-month]:hidden`}/>}
                     </CalendarGridBody>
                 </CalendarGrid>
 

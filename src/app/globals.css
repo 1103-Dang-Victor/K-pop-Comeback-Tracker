@@ -5,17 +5,18 @@
     :root {
         --color-textBase: #02010A;
         --color-primary: #ececec;
-        --color-secondary: #746f72;
+        --color-secondary: #EC9A29;
+        --color-secondaryTwo: #E5446D;
+        --color-secondaryThree: #F97265;
         --color-accent: #05a8aa;
-        --color-darkerAccent: #2D898B;
+        --color-accentTwo: #2D898B;
+        --color-accentThree: #1D6371;
     }
 
     .dark {
         --color-textBase: #ececec;
         --color-primary: #02010A;
         --color-secondary: #746f72;
-        --color-accent: #05a8aa;
-        --color-darkerAccent: #2D898B;
     }
 }
 
