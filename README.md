@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# K-pop Comeback Tracker [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#) [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)](#) [![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)](#) 
+---
+The K-pop Comeback Tracker is a website mainly aimed towards helping k-pop fans to follow the upcoming releases of their favorite artists through an easily usable website. If you would like to use the website and see it in action, please visit it here.
 
-## Getting Started
+## Installation 
+If you would like to fork the repository and run the website modifying it in your own remote environment, here is how to do so. For this project, I am using a Windows 10 machine so I utilized the .msi file in the download page but I had to troubleshoot to get it to work. Regarding specifics, I am on npm v10.9.2 and node v22.13.1. 
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Install [Node.js](https://nodejs.org/en) ensuring the version is at least v18.18 or later using fnm and npm if on Windows
+If you would like to check the versions you have in the CLI: 
+```
+	npm -v
+	node -v
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Click the Fork button in the top right of the repo, specifying where to fork it
+- After forking, you should be in the forked repo now. Click on the green code button and copy the link
+- In your editor of choice go to the command line and now type
+``` 
+	git clone {the copied link}
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- In the repo on the CLI if you want to start the dev server, type in the CLI:
+```	
+	npm run dev
+``` 
+- And ctrl-c in the CLI to stop the server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Feedback and Contact
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you have any feedback or would like to get in touch, you can submit feedback either 
+- on the google form 
+- or direct email me at vdang@unr.edu
