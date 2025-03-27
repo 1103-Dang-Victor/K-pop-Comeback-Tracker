@@ -69,10 +69,10 @@ const FilterComponent = () => {
                     </div>
 
                     
-                        <Button className={`p-3 m-2 border-2 border-solid rounded-lg border-tBase
+                        <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
                             hover:shadow-md hover:shadow-tBase`}> Apply </Button>
                     
-                        <Button className={`p-3 m-2 border-2 border-solid rounded-lg border-tBase
+                        <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
                             hover:shadow-md hover:shadow-tBase`}> Clear </Button>
                     
                 </div>
