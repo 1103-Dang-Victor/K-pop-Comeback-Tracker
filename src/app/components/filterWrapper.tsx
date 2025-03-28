@@ -3,13 +3,15 @@ import React, { useReducer } from "react"
 import { Button, ToggleButton } from "react-aria-components"
 import { filterReducer, initialFilters, ReducerActionType} from "../hooks/filterReducer"
 import FilterSearchComponent from "./filterSearch";
+//import { filterContext } from "../hooks/filterContext";
 
 const FilterComponent = () => {
     const [filters, filterDispatch] = useReducer(filterReducer, initialFilters);
 
 
     return (
-        <>
+        <> 
+            {/*<filterContext.Provider value={{filterContextState: filters, filterContextDispatch: filterDispatch}} ></filterContext.Provider>*/}
             <div className="flex m-3 p-2 flex-wrap">
                 <FilterSearchComponent></FilterSearchComponent>
 
@@ -68,16 +70,12 @@ const FilterComponent = () => {
                         hover:shadow-md hover:shadow-tBase`}>Single</ToggleButton>
                     </div>
 
-                    
                         <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
                             hover:shadow-md hover:shadow-tBase`}> Apply </Button>
                     
                         <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
                             hover:shadow-md hover:shadow-tBase`}> Clear </Button>
-                    
                 </div>
-                
-                
             </div>
             
             

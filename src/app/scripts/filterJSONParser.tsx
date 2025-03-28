@@ -4,7 +4,7 @@ type Release = {
     artist: string,
     title: string,
     releaseDate: string,
-    promoType: string | null,
+    promoType: string,
     songType: string
 }
 

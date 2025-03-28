@@ -6,7 +6,7 @@
                     "artist":"NCT WISH",
                     "title":"The 2nd Mini Album - poppop",
                     "releaseDate": "4/14/25",
-                    "promoType": null,
+                    "promoType": "",
                     "songType":"album"
                 },
 
@@ -26,7 +26,7 @@
                     "artist":"Kep1er",
                     "title":"Japan 1st EP - <AGAINST THE WORLD>",
                     "releaseDate": "4/14/25",
-                    "promoType": null,
+                    "promoType": "",
                     "songType":"EP"
                 }
             ]

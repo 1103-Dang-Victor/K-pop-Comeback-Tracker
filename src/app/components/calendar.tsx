@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import { Button, Calendar, CalendarCell, CalendarGrid, CalendarGridBody, CalendarGridHeader,
-    CalendarHeaderCell, Heading, Text } from "react-aria-components";
+    CalendarHeaderCell, Heading } from "react-aria-components";
 
 const CalendarComponent = () => {
     return (

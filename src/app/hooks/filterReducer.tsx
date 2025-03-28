@@ -1,6 +1,14 @@
 import React from "react";
 
-export const initialFilters = {
+export type FilterState = {
+    artist: string,
+    title: string,
+    releaseDate: string,
+    promoType: string[],
+    songType: string[]
+}
+
+export const initialFilters: FilterState = {
     artist: "",
     title: "",
     releaseDate: "",
@@ -12,12 +20,12 @@ export const enum ReducerActionType {
     promoFilterEvent, songFilterEvent
 }
 
-type ReducerAction = {
+export type ReducerAction = {
     type: ReducerActionType
     payload: {category: "promoType" | "songType", value: string, preValue: boolean}
 }
 
-export const filterReducer = (state: typeof initialFilters, action: ReducerAction):typeof initialFilters => {
+export const filterReducer = (state: FilterState, action: ReducerAction):FilterState => {
     const {category, value, preValue} = action.payload;
     var updatedFilters: string[] = [];
 
