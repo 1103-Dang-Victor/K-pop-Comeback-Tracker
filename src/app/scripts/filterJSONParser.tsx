@@ -25,7 +25,7 @@ export const filterJSONParser = (): ArtistReleases => {
         });
       });
 
-    console.dir(artistMap);
+    //console.dir(artistMap);
     
     return artistMap;
 }

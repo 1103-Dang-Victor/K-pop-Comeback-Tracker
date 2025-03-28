@@ -24,8 +24,8 @@ export const enum ReducerActionType {
 export type ReducerAction =  
     | {type: ReducerActionType.promoFilterEvent; payload: {category: "promoType", value: string, preValue: boolean}}
     | {type: ReducerActionType.songFilterEvent; payload: {category: "songType", value: string, preValue: boolean}}
-    | {type:ReducerActionType.addArtist; payload: {newArtist: string}}
-    | {type:ReducerActionType.removeArtist; payload: {oldArtist: string}}
+    | {type:ReducerActionType.addArtist; payload: {artist: string}}
+    | {type:ReducerActionType.removeArtist; payload: {artist: string}}
 
 export const filterReducer = (state: FilterState, action: ReducerAction):FilterState => {
     switch(action.type) {
@@ -39,6 +39,7 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
                         updatedFilters = [...state[category], value];
                     }
                 }
+                console.dir(initialFilters);
                 return {...state, [category]: updatedFilters};
             }
         case ReducerActionType.songFilterEvent: {
@@ -51,16 +52,18 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
                         updatedFilters = [...state[category], value];
                     }
                 }
+                console.dir(initialFilters);
                 return {...state, [category]: updatedFilters};
             }
         case ReducerActionType.addArtist: {
-                const {newArtist} = action.payload;
-                console.log(initialFilters);
-                return {...state, artist:[...state.artist, newArtist]};
+                const {artist} = action.payload;
+                console.dir(initialFilters);
+                return {...state, artist:[...state.artist, artist]};
             }   
         case ReducerActionType.removeArtist: {  
-                const {oldArtist} = action.payload;
-                return {...state,  artist: state.artist.filter(a => a !== oldArtist)};
+                const {artist} = action.payload;
+                console.dir(initialFilters);
+                return {...state,  artist: state.artist.filter(a => a !== artist)};
             }   
         default:
             return state;
