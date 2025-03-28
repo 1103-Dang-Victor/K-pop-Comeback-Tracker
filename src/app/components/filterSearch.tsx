@@ -2,8 +2,13 @@
 import React from "react";
 import { Button, ComboBox, Input, Label, ListBox, ListBoxItem, Popover } from "react-aria-components";
 import { filterJSONParser } from "../scripts/filterJSONParser";
+//import { useFilterContext } from "../hooks/filterContext";
+
+//will need to adjust for adding in the keys for each artist, maybe just their artistGroup name themselves
+//to deal with the missing key error 
 
 const FilterSearchComponent = () => {
+    //const {filterContextState, filterContextDispatch} = useFilterContext();
     const artists = filterJSONParser();
 
     return (
@@ -18,11 +23,15 @@ const FilterSearchComponent = () => {
                         </Button>
                     </div>
                 <Popover className={`border-2 border-tBase rounded-md p-1 m-1 min-w-48`}>
-                    <ListBox selectionMode="multiple">
+                    <ListBox selectionMode="multiple"
+                        renderEmptyState={() => "No artists found. :( "}>
                         {Object.entries(artists).map(([artistGroup, releases]) => 
                             <ListBoxItem className={`p-1  hover:shadow-lg hover:shadow-accent 
                             rounded-md hover:ring-accent hover:ring-2 data-[selected]:text-primary
-                            data-[selected]:bg-accent dark:data-[selected]:text-tBase`}>{artistGroup}</ListBoxItem>)}
+                            data-[selected]:bg-accent dark:data-[selected]:text-tBase
+                            `}
+                            
+                            >{artistGroup}</ListBoxItem>)}
                     </ListBox>
                 </Popover>
             </ComboBox>

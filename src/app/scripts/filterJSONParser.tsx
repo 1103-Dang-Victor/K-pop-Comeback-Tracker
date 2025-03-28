@@ -8,11 +8,12 @@ type Release = {
     songType: string
 }
 
-type ArtistReleases = Record<string, Release[]>;
+export type ArtistReleases = Record<string, Release[]>;
 
 export const filterJSONParser = (): ArtistReleases => {
     const artistMap: ArtistReleases = {};
 
+    
     data.all.forEach((group) => {
         Object.entries(group).forEach(([artistGroup, releases]) => {
           (releases as Release[]).forEach((release) => {
