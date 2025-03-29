@@ -17,52 +17,59 @@ export const initialFilters: FilterState = {
 export const enum ReducerActionType {
     promoFilterEvent, 
     songFilterEvent, 
-    addArtist, 
-    removeArtist
+    artistFilterEvent,
+    applyFilterEvent, //check for no artists being included then either show error requiring artist or show everything that matches?
+    clearFilterEvent
 }
 
 export type ReducerAction =  
     | {type: ReducerActionType.promoFilterEvent; payload: {category: "promoType", value: string, preValue: boolean}}
     | {type: ReducerActionType.songFilterEvent; payload: {category: "songType", value: string, preValue: boolean}}
-    | {type:ReducerActionType.addArtist; payload: {artist: string}}
-    | {type:ReducerActionType.removeArtist; payload: {artist: string}}
+    | {type:ReducerActionType.artistFilterEvent; payload: {category: "artist", value: string}}
 
 export const filterReducer = (state: FilterState, action: ReducerAction):FilterState => {
     switch(action.type) {
         case ReducerActionType.promoFilterEvent: {
                 const {category, value, preValue} = action.payload;
                 var updatedFilters: string[] = [];
+                //if value is found to exist in filterList --> remove from list
+                //otherwise --> add to the list 
                 if (preValue) {
-                        updatedFilters = state[category].filter((element) => element !== value);
-                    } else {
-                        updatedFilters = [...state[category], value];
-                    }
-                
-                //console.dir(initialFilters);
+                    updatedFilters = state[category].filter((element) => element !== value);
+                } else {
+                    updatedFilters = [...state[category], value];
+                }
+
                 return {...state, [category]: updatedFilters};
             }
         case ReducerActionType.songFilterEvent: {
                 const {category, value, preValue} = action.payload;
                 var updatedFilters: string[] = [];
-                    if (preValue) {
-                        updatedFilters = state[category].filter((element) => element !== value);
-                    } else {
-                        updatedFilters = [...state[category], value];
-                    }
-                
-                //console.dir(initialFilters);
+                //if value is found to exist in filterList --> remove from list
+                //otherwise --> add to the list 
+                if (preValue) {
+                    updatedFilters = state[category].filter((element) => element !== value);
+                } else {
+                    updatedFilters = [...state[category], value];
+                }
+
                 return {...state, [category]: updatedFilters};
             }
-        case ReducerActionType.addArtist: {
-                const {artist} = action.payload;
-                //console.dir(initialFilters);
-                return {...state, artist:[...state.artist, artist]};
+        case ReducerActionType.artistFilterEvent: {
+                const {category, value} = action.payload;
+                var updatedArtists: string[] = [];
+
+                if (state[category].includes(value)) {
+                    //Remove Artist
+                    updatedArtists = state[category].filter((element) => element !== value);
+                } else {
+                    //Add Artist
+                    updatedArtists = [...state[category], value];
+                }
+
+                return {...state, [category]: updatedArtists};
             }   
-        case ReducerActionType.removeArtist: {  
-                const {artist} = action.payload;
-                //console.dir(initialFilters);
-                return {...state,  artist: state.artist.filter(a => a !== artist)};
-            }   
+                
         default:
             return state;
     }

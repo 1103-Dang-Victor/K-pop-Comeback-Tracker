@@ -26,7 +26,6 @@ const FilterComponent = () => {
                                     type: ReducerActionType.promoFilterEvent,
                                     payload: {category: "promoType", value: "mv", preValue: filterContextState.promoType.includes("mv")}
                                 })
-                                console.log(filterContextState);
                             }}
                         >MV</ToggleButton>
                         
@@ -39,13 +38,19 @@ const FilterComponent = () => {
                                     type: ReducerActionType.promoFilterEvent,
                                     payload: {category: "promoType", value: "teaser", preValue: filterContextState.promoType.includes("teaser")}
                                 })
-                                console.log(filterContextState);
                             }}
                         >Teaser</ToggleButton>
                         
                         <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase 
-                        `}
+                        ${filterContextState.promoType.includes("visualizer") ? "bg-accentThree text-primary font-bold dark:text-tBase" : ""}`}
+                            isSelected={filterContextState.promoType.includes("visualizer")}
+                            onPress={() => {
+                                filterContextDispatch({
+                                    type: ReducerActionType.promoFilterEvent,
+                                    payload: {category: "promoType", value: "visualizer", preValue: filterContextState.promoType.includes("visualizer")}
+                                })
+                            }}
                         >Visualizer</ToggleButton>
                 
                     </div>
@@ -54,17 +59,49 @@ const FilterComponent = () => {
                         <h1 className="font-bold">Song Types</h1>
                         
                         <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
-                        hover:shadow-md hover:shadow-tBase`}>Album</ToggleButton>
+                        hover:shadow-md hover:shadow-tBase
+                        ${filterContextState.songType.includes("album") ? "bg-secondary text-primary font-bold dark:text-tBase" : ""}`}
+                        isSelected={filterContextState.songType.includes("album")}
+                        onPress={() => {
+                            filterContextDispatch({
+                                type: ReducerActionType.songFilterEvent,
+                                payload: {category: "songType", value: "album", preValue: filterContextState.songType.includes("album")}
+                            })
+                        }}
+                        >Album</ToggleButton>
                         
                         <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
-                        hover:shadow-md hover:shadow-tBase`}>EP</ToggleButton>
+                        hover:shadow-md hover:shadow-tBase
+                        ${filterContextState.songType.includes("ep") ? "bg-secondaryTwo text-primary font-bold dark:text-tBase" : ""}`}
+                        isSelected={filterContextState.songType.includes("ep")}
+                        onPress={() => {
+                            filterContextDispatch({
+                                type: ReducerActionType.songFilterEvent,
+                                payload: {category: "songType", value: "ep", preValue: filterContextState.songType.includes("ep")}
+                            })
+                        }}
+                        >EP</ToggleButton>
                         
                         <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
-                        hover:shadow-md hover:shadow-tBase`}>Single</ToggleButton>
+                        hover:shadow-md hover:shadow-tBase
+                        ${filterContextState.songType.includes("single") ? "bg-secondaryThree text-primary font-bold dark:text-tBase" : ""}`}
+                        isSelected={filterContextState.songType.includes("single")}
+                        onPress={() => {
+                            filterContextDispatch({
+                                type: ReducerActionType.songFilterEvent,
+                                payload: {category: "songType", value: "single", preValue: filterContextState.songType.includes("single")}
+                            })
+                        }}
+                        >Single</ToggleButton>
+                        
                     </div>
 
                         <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
-                            hover:shadow-md hover:shadow-tBase`}> Apply </Button>
+                            hover:shadow-md hover:shadow-tBase`}
+                            onPress={() => {
+                                console.log(filterContextState);
+                            }}
+                            > Apply </Button>
                     
                         <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
                             hover:shadow-md hover:shadow-tBase`}> Clear </Button>
