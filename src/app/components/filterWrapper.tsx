@@ -26,6 +26,7 @@ const FilterComponent = () => {
                                     type: ReducerActionType.promoFilterEvent,
                                     payload: {category: "promoType", value: "mv", preValue: filterContextState.promoType.includes("mv")}
                                 })
+                                console.log(filterContextState);
                             }}
                         >MV</ToggleButton>
                         
@@ -38,6 +39,7 @@ const FilterComponent = () => {
                                     type: ReducerActionType.promoFilterEvent,
                                     payload: {category: "promoType", value: "teaser", preValue: filterContextState.promoType.includes("teaser")}
                                 })
+                                console.log(filterContextState);
                             }}
                         >Teaser</ToggleButton>
                         

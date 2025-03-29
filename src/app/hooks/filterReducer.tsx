@@ -32,37 +32,35 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
         case ReducerActionType.promoFilterEvent: {
                 const {category, value, preValue} = action.payload;
                 var updatedFilters: string[] = [];
-                if (category == "promoType") {
-                    if (preValue) {
+                if (preValue) {
                         updatedFilters = state[category].filter((element) => element !== value);
                     } else {
                         updatedFilters = [...state[category], value];
                     }
-                }
-                console.dir(initialFilters);
+                
+                //console.dir(initialFilters);
                 return {...state, [category]: updatedFilters};
             }
         case ReducerActionType.songFilterEvent: {
                 const {category, value, preValue} = action.payload;
                 var updatedFilters: string[] = [];
-                if (category == "songType") {
                     if (preValue) {
                         updatedFilters = state[category].filter((element) => element !== value);
                     } else {
                         updatedFilters = [...state[category], value];
                     }
-                }
-                console.dir(initialFilters);
+                
+                //console.dir(initialFilters);
                 return {...state, [category]: updatedFilters};
             }
         case ReducerActionType.addArtist: {
                 const {artist} = action.payload;
-                console.dir(initialFilters);
+                //console.dir(initialFilters);
                 return {...state, artist:[...state.artist, artist]};
             }   
         case ReducerActionType.removeArtist: {  
                 const {artist} = action.payload;
-                console.dir(initialFilters);
+                //console.dir(initialFilters);
                 return {...state,  artist: state.artist.filter(a => a !== artist)};
             }   
         default:

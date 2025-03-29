@@ -38,6 +38,7 @@ const FilterSearchComponent = () => {
                                     type: alrSelected ? ReducerActionType.removeArtist : ReducerActionType.addArtist,
                                     payload: {artist: artistGroup}
                                 });
+                                console.log(filterContextState);
                             }}
                             key={artistGroup}
                             >{artistGroup}</ListBoxItem>)}
