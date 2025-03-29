@@ -1,6 +1,6 @@
 # K-pop Comeback Tracker [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#) [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)](#) [![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)](#) 
 ---
-The K-pop Comeback Tracker is a website mainly aimed towards helping k-pop fans to follow the upcoming releases of their favorite artists through an easily usable website. If you would like to use the website and see it in action, please visit it here.
+The K-pop Comeback Tracker is a website mainly aimed towards helping k-pop fans to follow the upcoming releases of their favorite artists through an easily usable website. Will update here to add the actual website link once it's all mostly setup.
 
 ## Installation 
 If you would like to fork the repository and run the website modifying it in your own remote environment, here is how to do so. For this project, I am using a Windows 10 machine so I utilized the .msi file in the download page but I had to troubleshoot to get it to work. Regarding specifics, I am on npm v10.9.2 and node v22.13.1. 
@@ -28,5 +28,11 @@ If you would like to check the versions you have in the CLI:
 ## Feedback and Contact
 
 If you have any feedback or would like to get in touch, you can submit feedback either 
-- on the google form 
+- on the google form (will add later!)
 - or direct email me at vdang@unr.edu
+
+## Data Sources
+
+- https://kprofiles.com/comebacks/ 
+- https://kpopofficial.com/category/kpop-comeback-schedule/
+
