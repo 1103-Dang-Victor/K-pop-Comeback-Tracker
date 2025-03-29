@@ -60,7 +60,7 @@ const FilterComponent = () => {
                         
                         <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase
-                        ${filterContextState.songType.includes("album") ? "bg-secondary text-primary font-bold dark:text-tBase" : ""}`}
+                        ${filterContextState.songType.includes("album") ? "bg-secondary font-bold dark:text-tBase" : ""}`}
                         isSelected={filterContextState.songType.includes("album")}
                         onPress={() => {
                             filterContextDispatch({
@@ -72,7 +72,7 @@ const FilterComponent = () => {
                         
                         <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase
-                        ${filterContextState.songType.includes("ep") ? "bg-secondaryTwo text-primary font-bold dark:text-tBase" : ""}`}
+                        ${filterContextState.songType.includes("ep") ? "bg-secondaryTwo font-bold dark:text-tBase" : ""}`}
                         isSelected={filterContextState.songType.includes("ep")}
                         onPress={() => {
                             filterContextDispatch({
@@ -84,7 +84,7 @@ const FilterComponent = () => {
                         
                         <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase
-                        ${filterContextState.songType.includes("single") ? "bg-secondaryThree text-primary font-bold dark:text-tBase" : ""}`}
+                        ${filterContextState.songType.includes("single") ? "bg-secondaryThree font-bold dark:text-tBase" : ""}`}
                         isSelected={filterContextState.songType.includes("single")}
                         onPress={() => {
                             filterContextDispatch({

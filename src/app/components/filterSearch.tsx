@@ -5,7 +5,6 @@ import { filterJSONParser } from "../scripts/filterJSONParser";
 import { useFilterContext } from "../hooks/filterContext";
 import { ReducerActionType } from "../hooks/filterReducer";
 
-
 const FilterSearchComponent = () => {
     const {filterContextState, filterContextDispatch} = useFilterContext();
     const artists = filterJSONParser();
@@ -24,11 +23,10 @@ const FilterSearchComponent = () => {
                 <Popover className={`border-2 border-tBase rounded-md p-1 m-1 min-w-48`}>
                     <ListBox selectionMode="multiple"
                         renderEmptyState={() => "No artists found. :( "}>
-
                         {Object.entries(artists).map(([artistGroup, releases]) => 
                             <ListBoxItem 
                             className={`p-1 hover:shadow-lg hover:shadow-accent 
-                            rounded-md hover:ring-accent hover:ring-2 `} //data-[selected]:text-primary data-[selected]:bg-accent dark:data-[selected]:text-tBase
+                            rounded-md hover:ring-accent hover:ring-2`} 
                             onAction={() => {
                                 filterContextDispatch({
                                     type: ReducerActionType.artistFilterEvent,
