@@ -20,12 +20,12 @@ const FilterSearchComponent = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className={`fill-tBase w-8 h-8 inline`}><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                         </Button>
                     </div>
-                <Popover className={`border-2 border-tBase rounded-md p-1 m-1 min-w-48`}>
+                <Popover className={`border-2 border-tBase rounded-md p-1 m-1 min-w-48 shadow-sm shadow-tBase`}>
                     <ListBox selectionMode="multiple"
                         renderEmptyState={() => "No artists found. :( "}>
                         {Object.entries(artists).map(([artistGroup, releases]) => 
                             <ListBoxItem 
-                            className={`p-1 hover:shadow-lg hover:shadow-accent 
+                            className={`p-1 hover:shadow-lg hover:shadow-accent
                             rounded-md hover:ring-accent hover:ring-2`} 
                             onAction={() => {
                                 filterContextDispatch({
@@ -34,7 +34,8 @@ const FilterSearchComponent = () => {
                                 });
                             }}
                             key={artistGroup}
-                            >{artistGroup}</ListBoxItem>)}
+                            >   
+                                {artistGroup}</ListBoxItem>)}
                     </ListBox>
                 </Popover>
             </ComboBox>
