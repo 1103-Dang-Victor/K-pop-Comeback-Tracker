@@ -25,7 +25,7 @@ const FilterSearchComponent = () => {
                         renderEmptyState={() => "No artists found. :( "}>
                         {Object.entries(artists).map(([artistGroup, releases]) => 
                             <ListBoxItem 
-                            className={`p-1 hover:shadow-lg hover:shadow-accent
+                            className={`p-1 hover:shadow-lg hover:shadow-accent data-[pressed]:bg-accent
                             rounded-md hover:ring-accent hover:ring-2`} 
                             onAction={() => {
                                 filterContextDispatch({
@@ -34,8 +34,7 @@ const FilterSearchComponent = () => {
                                 });
                             }}
                             key={artistGroup}
-                            >   
-                                {artistGroup}</ListBoxItem>)}
+                            >{artistGroup}</ListBoxItem>)}
                     </ListBox>
                 </Popover>
             </ComboBox>
