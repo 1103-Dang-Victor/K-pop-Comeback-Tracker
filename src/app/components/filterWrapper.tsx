@@ -95,16 +95,25 @@ const FilterComponent = () => {
                         >Single</ToggleButton>
                         
                     </div>
-
-                        <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
-                            hover:shadow-md hover:shadow-tBase`}
-                            onPress={() => {
-                                console.log(filterContextState);
-                            }}
-                            > Apply </Button>
                     
-                        <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
-                            hover:shadow-md hover:shadow-tBase`}> Clear </Button>
+                    <p className={'my-8'}><b>Selected Artists:</b> {filterContextState.artist.join(', ')} </p>
+                    
+                    <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
+                        hover:shadow-md hover:shadow-tBase`}
+                        onPress={() => {
+                            console.log(filterContextState);
+                        }}
+                        > Apply </Button>
+                    
+                    <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
+                        hover:shadow-md hover:shadow-tBase`}
+                        onPress={() => {
+                            filterContextDispatch({
+                                type: ReducerActionType.clearFilterEvent
+                            })
+                        }}
+                        > Clear </Button>
+                    
                 </div>
             </div>
         </>

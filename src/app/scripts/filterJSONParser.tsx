@@ -1,6 +1,6 @@
 import data from "../data/allArtists.json"
 
-type Release = {
+export type Release = {
     artist: string,
     title: string,
     releaseDate: string,

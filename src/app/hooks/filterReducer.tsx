@@ -26,6 +26,8 @@ export type ReducerAction =
     | {type: ReducerActionType.promoFilterEvent; payload: {category: "promoType", value: string, preValue: boolean}}
     | {type: ReducerActionType.songFilterEvent; payload: {category: "songType", value: string, preValue: boolean}}
     | {type:ReducerActionType.artistFilterEvent; payload: {category: "artist", value: string}}
+    | {type:ReducerActionType.clearFilterEvent;}
+    | {type:ReducerActionType.applyFilterEvent;}
 
 export const filterReducer = (state: FilterState, action: ReducerAction):FilterState => {
     switch(action.type) {
@@ -69,7 +71,13 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
 
                 return {...state, [category]: updatedArtists};
             }   
-                
+        case ReducerActionType.clearFilterEvent: {
+            return {...state,
+                artist: [],
+                promoType: [],
+                songType: []
+            };
+        }
         default:
             return state;
     }

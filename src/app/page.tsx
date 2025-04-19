@@ -21,7 +21,7 @@ export default function Home() {
           </div>
 
           <div className="border-t-2 border-tBase p-4 w-fit basis-full mt-2">
-            <h1 className="font-bold p-2 border-b-2 border-tBase">Events</h1>
+            <h1 className="font-bold p-2 border-b-2 border-tBase">Results</h1>
             <EventCardComponent></EventCardComponent>
           </div>
 
