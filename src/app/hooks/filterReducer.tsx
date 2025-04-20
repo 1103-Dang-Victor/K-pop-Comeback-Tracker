@@ -4,6 +4,7 @@ export type FilterState = {
     releaseDate: string,
     promoType: string[],
     songType: string[]
+    filtersActive: boolean;
 }
 
 export const initialFilters: FilterState = {
@@ -11,23 +12,24 @@ export const initialFilters: FilterState = {
     title: "",
     releaseDate: "",
     promoType: [] as string[],
-    songType: [] as string[]
+    songType: [] as string[],
+    filtersActive: false
 }
 
 export const enum ReducerActionType {
     promoFilterEvent, 
     songFilterEvent, 
     artistFilterEvent,
-    applyFilterEvent, //check for no artists being included then either show error requiring artist or show everything that matches?
-    clearFilterEvent
+    clearFilterEvent,
+    applyFilterEvent
 }
 
 export type ReducerAction =  
     | {type: ReducerActionType.promoFilterEvent; payload: {category: "promoType", value: string, preValue: boolean}}
     | {type: ReducerActionType.songFilterEvent; payload: {category: "songType", value: string, preValue: boolean}}
-    | {type:ReducerActionType.artistFilterEvent; payload: {category: "artist", value: string}}
-    | {type:ReducerActionType.clearFilterEvent;}
-    | {type:ReducerActionType.applyFilterEvent;}
+    | {type: ReducerActionType.artistFilterEvent; payload: {category: "artist", value: string}}
+    | {type: ReducerActionType.clearFilterEvent;}
+    | {type: ReducerActionType.applyFilterEvent;}
 
 export const filterReducer = (state: FilterState, action: ReducerAction):FilterState => {
     switch(action.type) {
@@ -75,8 +77,14 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
             return {...state,
                 artist: [],
                 promoType: [],
-                songType: []
+                songType: [],
+                filtersActive: false
             };
+        }
+        case ReducerActionType.applyFilterEvent: {
+            return {...state,
+                filtersActive: true
+            }
         }
         default:
             return state;

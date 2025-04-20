@@ -1,23 +1,22 @@
 'use client';
 import React from "react";
 import { useFilterContext } from "../hooks/filterContext";
-import { ReducerActionType } from "../hooks/filterReducer";
 
 const EventCardComponent = () => {
     const {filterContextState, filterContextDispatch} = useFilterContext();
 
     return  (
-        <>
-            <h1 className="m-4 p-2">Show results here: </h1>
-
-            <p>No search results found.</p>
+        <div className={'m-2 p-2'}>
+            {(filterContextState.artist.length === 0 && filterContextState.promoType.length == 0
+            && filterContextState.songType.length === 0) ? <p>No filters selected yet. Please select your filters.</p> 
+                : (filterContextState.filtersActive) ? <p>Filters are active</p> 
+                    : <p>Filters are not active</p>}
+            
+            <br />
+            <p>{filterContextState.filtersActive ? "True" : "False"}</p>
             <br />
             <br />
-            <p><b>Logging: </b></p>
-            <p>Artists Array Length: {filterContextState.artist.length}</p>
-            <p>PromoType Array Length: {filterContextState.promoType.length}</p>
-            <p>SongType Array Length: {filterContextState.songType.length}</p>
-        </>
+        </div>
     )
 }
 

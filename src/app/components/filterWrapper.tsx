@@ -101,7 +101,10 @@ const FilterComponent = () => {
                     <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
                         hover:shadow-md hover:shadow-tBase`}
                         onPress={() => {
-                            console.log(filterContextState);
+                            filterContextDispatch({
+                                type:ReducerActionType.applyFilterEvent
+                            });
+                            
                         }}
                         > Apply </Button>
                     

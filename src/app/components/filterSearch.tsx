@@ -22,7 +22,7 @@ const FilterSearchComponent = () => {
                     </div>
                 <Popover className={`border-2 border-tBase rounded-md p-1 m-1 min-w-48 shadow-sm shadow-tBase z-10 bg-primary`}>
                     <ListBox selectionMode="multiple"
-                        renderEmptyState={() => "No artists found. :( "}>
+                        >
                         {Object.entries(artists).map(([artistGroup, releases]) => 
                             <ListBoxItem 
                             className={`p-1 hover:shadow-lg hover:shadow-accent data-[pressed]:bg-accent
