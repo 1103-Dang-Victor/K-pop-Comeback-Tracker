@@ -6,7 +6,7 @@ const EventCardComponent = () => {
     const {filterContextState, filterContextDispatch} = useFilterContext();
 
     return  (
-        <div className={'m-2 p-2'}>
+        <div className={'m-2 p-2 min-h-96'}>
             {(filterContextState.artist.length === 0 && filterContextState.promoType.length == 0
             && filterContextState.songType.length === 0) ? <p>No filters selected yet. Please select your filters.</p> 
                 : (filterContextState.filtersActive) ? <p>Filters are active</p> 

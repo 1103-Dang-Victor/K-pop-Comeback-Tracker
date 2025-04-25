@@ -2,6 +2,7 @@ import CalendarComponent from "./components/calendar";
 import DarkModeButtonComponent from "./components/darkModeButton";
 import EventCardComponent from "./components/eventCard";
 import FilterComponent from "./components/filterWrapper";
+import FooterComponent from "./components/footer";
 import { FilterProvider } from "./hooks/filterContext";
 
 export default function Home() {
@@ -23,6 +24,8 @@ export default function Home() {
           <div className="border-t-2 border-tBase p-4 w-fit basis-full mt-2">
             <h1 className="font-bold p-2 border-b-2 border-tBase">Results</h1>
             <EventCardComponent></EventCardComponent>
+
+            <FooterComponent></FooterComponent>
           </div>
 
         </div>
