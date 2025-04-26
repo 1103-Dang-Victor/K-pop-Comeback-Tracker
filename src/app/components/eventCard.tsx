@@ -3,7 +3,7 @@ import React from "react";
 import { useFilterContext } from "../hooks/filterContext";
 
 const EventCardComponent = () => {
-    const {filterContextState, filterContextDispatch} = useFilterContext();
+    const {filterContextState} = useFilterContext();
 
     return  (
         <div className={'m-2 p-2 min-h-96'}>

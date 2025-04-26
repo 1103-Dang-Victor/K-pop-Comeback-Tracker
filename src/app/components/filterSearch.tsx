@@ -6,7 +6,7 @@ import { useFilterContext } from "../hooks/filterContext";
 import { ReducerActionType } from "../hooks/filterReducer";
 
 const FilterSearchComponent = () => {
-    const {filterContextState, filterContextDispatch} = useFilterContext();
+    const {filterContextDispatch} = useFilterContext();
     const artists = filterJSONParser();
 
     return (
