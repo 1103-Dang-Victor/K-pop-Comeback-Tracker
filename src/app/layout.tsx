@@ -4,7 +4,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Kpop Comebacks Tracker",
+  title: "K-pop Comebacks Tracker",
   description: "A website to track when kpop comebacks are happening",
 };
 

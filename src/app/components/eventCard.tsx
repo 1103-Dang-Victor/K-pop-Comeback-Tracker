@@ -13,14 +13,11 @@ const EventCardComponent = () => {
             && filterContextState.songType.length === 0) ? <p>No filters selected yet. Please select your filters.</p> 
                 : (filterContextState.filtersActive) ? (
                     <>
-                        {matchedData.length > 0} ? {matchedData.map((elem) => <p>{elem}</p>)}
+                        {(matchedData.length > 0) ? (<p>{matchedData.join(', ')}</p>) : (<p>No Matches Found.</p>)}
                     </>)
                         : <p>Filters have been selected. Please hit apply.</p>}
             
-            <br />
-            <p>{filterContextState.filtersActive ? "True" : "False"}</p>
-            <br />
-            <br />
+            
         </div>
     )
 }
