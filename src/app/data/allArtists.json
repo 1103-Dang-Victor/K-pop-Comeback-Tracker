@@ -16,6 +16,110 @@
                     "releaseDate": "4/7/25",
                     "promoType":"MV",
                     "songType":"album"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 1",
+                    "releaseDate": "12/25/25",
+                    "promoType":"MV",
+                    "songType":"EP"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 2",
+                    "releaseDate": "12/25/25",
+                    "promoType":"MV",
+                    "songType":"single"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 3",
+                    "releaseDate": "12/25/25",
+                    "promoType":"MV",
+                    "songType":""
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 4",
+                    "releaseDate": "12/25/25",
+                    "promoType":"teaser",
+                    "songType":"EP"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 5",
+                    "releaseDate": "12/25/25",
+                    "promoType":"teaser",
+                    "songType":"album"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 6",
+                    "releaseDate": "12/25/25",
+                    "promoType":"teaser",
+                    "songType":"single"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 7",
+                    "releaseDate": "12/25/25",
+                    "promoType":"teaser",
+                    "songType":""
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 8",
+                    "releaseDate": "12/25/25",
+                    "promoType":"visualizer",
+                    "songType":"ep"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 9",
+                    "releaseDate": "12/25/25",
+                    "promoType":"visualizer",
+                    "songType":"album"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 10",
+                    "releaseDate": "12/25/25",
+                    "promoType":"visualizer",
+                    "songType":"single"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 11",
+                    "releaseDate": "12/25/25",
+                    "promoType":"visualizer",
+                    "songType":""
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 12",
+                    "releaseDate": "12/25/25",
+                    "promoType":"",
+                    "songType":"ep"
+                },
+
+                {
+                    "artist":"example artist",
+                    "title":"example title 13",
+                    "releaseDate": "12/25/25",
+                    "promoType":"",
+                    "songType":"single"
                 }
             ]
         },

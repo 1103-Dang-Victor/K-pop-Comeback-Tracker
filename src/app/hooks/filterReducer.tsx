@@ -44,7 +44,7 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
                     updatedFilters = [...state[category], value];
                 }
 
-                return {...state, [category]: updatedFilters};
+                return {...state, [category]: updatedFilters, filtersActive: false};
             }
         case ReducerActionType.songFilterEvent: {
                 const {category, value, preValue} = action.payload;
@@ -57,7 +57,7 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
                     updatedFilters = [...state[category], value];
                 }
 
-                return {...state, [category]: updatedFilters};
+                return {...state, [category]: updatedFilters, filtersActive: false};
             }
         case ReducerActionType.artistFilterEvent: {
                 const {category, value} = action.payload;
@@ -71,7 +71,7 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
                     updatedArtists = [...state[category], value];
                 }
 
-                return {...state, [category]: updatedArtists};
+                return {...state, [category]: updatedArtists, filtersActive: false};
             }   
         case ReducerActionType.clearFilterEvent: {
             return {...state,

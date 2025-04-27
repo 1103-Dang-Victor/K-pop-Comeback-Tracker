@@ -17,21 +17,22 @@ export const applyFiltersLogic = () => {
             const songMatch = (release.songType.length === 0) || (filterContextState.songType.includes(release.songType.toLowerCase()));
             
             if (promoMatch && songMatch) {
-              results.push(`${release.artist} - ${release.title}
-                            \n ${release.releaseDate}\
-                            \n Types - ${release.promoType}, ${release.songType}`)
-            } else if (promoMatch) { //songType empty -> allow all songTypes
-
-            } else if (songMatch) { //promoType empty -> allow all promoTypes
-
-            }
+              results.push(`${release.title} by ${release.artist}
+                            \n Date: ${release.releaseDate}\
+                            \n Types: ${release.promoType}, ${release.songType}`)
+            } 
         })
   
       } else {
-        //artist list is empty 
-        //check now through only promo types and song types since artists are not relevant now 
         releases.forEach((release) => {
+          const promoMatch = (release.promoType.length === 0) || (filterContextState.promoType.includes(release.promoType.toLowerCase()));
+          const songMatch = (release.songType.length === 0) || (filterContextState.songType.includes(release.songType.toLowerCase()));
           
+          if (promoMatch && songMatch) {
+            results.push(`${release.title} by ${release.artist}
+                          \n Date: ${release.releaseDate}\
+                          \n Types: ${release.promoType}, ${release.songType}`)
+          } 
         })
       }
     });
