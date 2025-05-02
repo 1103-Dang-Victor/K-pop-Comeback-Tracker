@@ -7,7 +7,8 @@ import { randomUUID } from "crypto";
 export type parsedItem = {
   value: string,
   identifier: string,
-  includedTypes: string;
+  includedTypes: string,
+  releaseDate: string;
 }
 
 export const applyFiltersLogic = () => {
@@ -26,7 +27,8 @@ export const applyFiltersLogic = () => {
               let newParsedItem:parsedItem = {
                 identifier: crypto.randomUUID(),
                 value: `${release.title} by ${release.artist}`,
-                includedTypes: `${release.songType}, ${release.promoType}`
+                includedTypes: `${release.songType}, ${release.promoType}`,
+                releaseDate: `${release.releaseDate}`
               };
               results.push(newParsedItem);
               

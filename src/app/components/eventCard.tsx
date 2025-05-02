@@ -6,15 +6,18 @@ import { applyFiltersLogic } from "../scripts/filterApplyFiltersLogic";
 const EventCardComponent = () => {
     const {filterContextState} = useFilterContext();
     let matchedData = applyFiltersLogic();
-    console.log(matchedData.length);
+
     return  (
         <div className={'m-2 p-2 min-h-96'}>
             {(filterContextState.artist.length === 0 && filterContextState.promoType.length == 0
             && filterContextState.songType.length === 0) ? <p>No filters selected yet. Please select your filters.</p> 
-                : (filterContextState.filtersActive) ? (
+                : (filterContextState.filtersActive) ? ( //checking if filters are selected and apply button clicked or not
                     <>
                         {(matchedData.length > 0) ? (matchedData.map((singleResult) => {
-                            return <p key={singleResult.identifier}>{singleResult.value}</p>
+                            return <p key={singleResult.identifier} className={`p-2 mt-2 border-b-2 border-solid rounded-lg
+                            border-tBase hover:shadow-sm hover:shadow-tBase`}><b>{singleResult.value}</b> <br /> 
+                                Releases: {singleResult.releaseDate} <br /> 
+                                Type: <br /> <br /> </p>
                         })) : (<p>No Matches Found.</p>)}
                     </>)
                         : <p>Filters have been selected. Please hit apply.</p>}
