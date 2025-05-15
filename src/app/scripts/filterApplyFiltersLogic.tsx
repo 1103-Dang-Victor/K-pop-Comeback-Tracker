@@ -25,7 +25,7 @@ export const applyFiltersLogic = () => {
               let newParsedItem:parsedItem = {
                 identifier: crypto.randomUUID(),
                 value: `${release.title} by ${release.artist}`,
-                includedTypes: `${release.songType}, ${release.promoType}`,
+                includedTypes: `${release.songType.toUpperCase()}, ${release.promoType.toUpperCase()}`,
                 releaseDate: `${release.releaseDate}`
               };
               results.push(newParsedItem);
