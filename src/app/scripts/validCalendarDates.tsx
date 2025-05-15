@@ -9,9 +9,8 @@ export let parseValidCalendarDates = (date: DateValue) => {
         return fromDate(new Date(item.releaseDate), 'America/Los_Angeles');
     })
 
-    let insideMatchedDates = matchedDates.some((validDate) => {
-        validDate.compare(date) === 0;
-    }) 
+    let insideMatchedDates = matchedDates.some(validDate => 
+        validDate.compare(date) === 0) 
     
     return !insideMatchedDates;
 }

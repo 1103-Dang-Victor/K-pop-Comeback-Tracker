@@ -9,6 +9,7 @@ const CalendarComponent = () => {
     return (
         <>
             <Calendar aria-label="MainCalendar" className={"overflow-x-hidden"}
+                isReadOnly
                 isDateUnavailable={parseValidCalendarDates}>
                 <header className="flex p-2 m-3 justify-between">
                     <Button slot="previous" className={`mx-5 p-3 border-2 border-solid rounded-lg border-tBase 
@@ -25,8 +26,8 @@ const CalendarComponent = () => {
 
                     <CalendarGridBody>
                         {(date) => <CalendarCell date={date} className={`text-center p-3 m-1 rounded-md text-tBase dark:text-tBase
-                            data-[selected]:bg-accent data-[selected]:text-primary data-[outside-month]:hidden
-                            data-[unavailable]:text-gray-500 dark:data-[unavailable]:text-gray-600`}/>}
+                            data-[selected]:bg-accent data-[selected]:text-primary data-[outside-month]:hidden 
+                            data-[unavailable]:text-gray-400 dark:data-[unavailable]:text-gray-600`}/>}
                     </CalendarGridBody>
                 </CalendarGrid>
 
