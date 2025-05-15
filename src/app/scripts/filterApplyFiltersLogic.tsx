@@ -1,8 +1,6 @@
 import { useFilterContext } from "../hooks/filterContext";
 import {filterJSONParser} from "./filterJSONParser";
 import { randomUUID } from "crypto";
-//for filtering through the selected filters and matching them to an object that can be displayed in eventCard
-//add fix later for artists selected being empty but filters are selected to 'require at least 1 artist to be selected' text on eventCard
 
 export type parsedItem = {
   value: string,
