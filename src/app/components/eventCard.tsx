@@ -6,7 +6,7 @@ import { parseCommas } from "../scripts/commaParser";
 
 const EventCardComponent = () => {
     const {filterContextState} = useFilterContext();
-    let matchedData = applyFiltersLogic();
+    const matchedData = applyFiltersLogic();
 
     return  (
         <div className={'m-2 p-2 min-h-96'}>

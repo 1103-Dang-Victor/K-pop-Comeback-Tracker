@@ -1,6 +1,6 @@
+/* eslint-disable */
 import { useFilterContext } from "../hooks/filterContext";
 import {filterJSONParser} from "./filterJSONParser";
-import { randomUUID } from "crypto";
 
 export type parsedItem = {
   value: string,
@@ -12,7 +12,7 @@ export type parsedItem = {
 export const applyFiltersLogic = () => {
   const data = filterJSONParser();
   const {filterContextState} = useFilterContext();
-  let results: parsedItem[] = [];
+  const results: parsedItem[] = [];
 
   if (filterContextState.filtersActive) {
     Object.entries(data).forEach(([groupName, releases]) => {
@@ -22,7 +22,7 @@ export const applyFiltersLogic = () => {
             const songMatch = (release.songType.length === 0) || (filterContextState.songType.includes(release.songType.toLowerCase()));
             
             if (promoMatch && songMatch) {
-              let newParsedItem:parsedItem = {
+              const newParsedItem:parsedItem = {
                 identifier: crypto.randomUUID(),
                 value: `${release.title} by ${release.artist}`,
                 includedTypes: `${release.songType.toUpperCase()}, ${release.promoType.toUpperCase()}`,

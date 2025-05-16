@@ -1,8 +1,8 @@
 
 export const parseCommas = (input: string):string => {
     if (input.includes(",")) {
-        let commaLocation = input.indexOf(",");
-        let spaceLocation = input[input.length-1];
+        const commaLocation = input.indexOf(",");
+        const spaceLocation = input[input.length-1];
         let newString;
 
         if ((commaLocation === 0) || (spaceLocation === " ")) {

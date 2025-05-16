@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      <script crossOrigin="anonymous" src="//unpkg.com/react-scan/dist/auto.global.js"></script>
+      {/*<script crossOrigin="anonymous" src="//unpkg.com/react-scan/dist/auto.global.js"></script>*/} {/*for performance optimizations*/}
       </head>
       <body className="m-auto text-xl md:text-lg bg-primary text-tBase duration-250 mt-3 overflow-y-auto">
         <header className="w-fit">

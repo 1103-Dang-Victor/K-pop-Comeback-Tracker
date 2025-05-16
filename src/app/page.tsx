@@ -7,7 +7,9 @@ import FooterComponent from "./components/footer";
 import { FilterProvider } from "./hooks/filterContext";
 import LoadingComponent from "./components/componentLoader";
 
-export default function Home() {
+export default async function Home() {
+  await new Promise((resolve) => setTimeout(resolve, 100));
+
   return (
     <>
       <FilterProvider>

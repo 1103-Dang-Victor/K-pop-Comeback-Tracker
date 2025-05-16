@@ -35,7 +35,7 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
     switch(action.type) {
         case ReducerActionType.promoFilterEvent: {
                 const {category, value, preValue} = action.payload;
-                var updatedFilters: string[] = [];
+                let updatedFilters: string[] = [];
                 //if value is found to exist in filterList --> remove from list
                 //otherwise --> add to the list 
                 if (preValue) {
@@ -48,7 +48,7 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
             }
         case ReducerActionType.songFilterEvent: {
                 const {category, value, preValue} = action.payload;
-                var updatedFilters: string[] = [];
+                let updatedFilters: string[] = [];
                 //if value is found to exist in filterList --> remove from list
                 //otherwise --> add to the list 
                 if (preValue) {
@@ -61,7 +61,7 @@ export const filterReducer = (state: FilterState, action: ReducerAction):FilterS
             }
         case ReducerActionType.artistFilterEvent: {
                 const {category, value} = action.payload;
-                var updatedArtists: string[] = [];
+                let updatedArtists: string[] = [];
 
                 if (state[category].includes(value)) {
                     //Remove Artist
