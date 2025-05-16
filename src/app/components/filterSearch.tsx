@@ -21,12 +21,12 @@ const FilterSearchComponent = () => {
                         </Button>
                     </div>
                 <Popover className={`border-2 border-tBase rounded-md p-1 m-1 min-w-48 shadow-sm shadow-tBase z-10 bg-primary`}>
-                    <ListBox selectionMode="multiple"
+                    <ListBox selectionMode="multiple" className={'overflow-y-scroll max-h-40'}
                         >
                         {Object.entries(artists).map(([artistGroup, releases]) => 
                             <ListBoxItem 
                             className={`p-1 hover:shadow-lg hover:shadow-accent data-[pressed]:bg-accent
-                            rounded-md hover:ring-accent hover:ring-2`} 
+                            rounded-md hover:ring-accent hover:ring-2 md:my-4`} 
                             onAction={() => {
                                 filterContextDispatch({
                                     type: ReducerActionType.artistFilterEvent,

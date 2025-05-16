@@ -1,139 +1,224 @@
 {
     "all": [
         {
-            "NCT": [
+            "BLACKSWAN": [
                 {
-                    "artist":"NCT WISH",
-                    "title":"The 2nd Mini Album - poppop",
-                    "releaseDate": "4/14/25",
+                    "artist":"BLACKSWAN",
+                    "title":"I Like It Hot",
+                    "releaseDate": "5/21/25",
                     "promoType": "",
-                    "songType":"album"
-                },
-
-                {
-                    "artist":"MARK",
-                    "title":"The 1st Album - The Firstfruit",
-                    "releaseDate": "4/7/25",
-                    "promoType":"MV",
-                    "songType":"album"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 1",
-                    "releaseDate": "12/25/25",
-                    "promoType":"MV",
-                    "songType":"EP"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 2",
-                    "releaseDate": "12/25/25",
-                    "promoType":"MV",
-                    "songType":"single"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 3",
-                    "releaseDate": "12/25/25",
-                    "promoType":"MV",
-                    "songType":""
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 4",
-                    "releaseDate": "12/25/25",
-                    "promoType":"teaser",
-                    "songType":"EP"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 5",
-                    "releaseDate": "12/25/25",
-                    "promoType":"teaser",
-                    "songType":"album"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 6",
-                    "releaseDate": "12/25/25",
-                    "promoType":"teaser",
-                    "songType":"single"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 7",
-                    "releaseDate": "12/25/25",
-                    "promoType":"teaser",
-                    "songType":""
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 8",
-                    "releaseDate": "12/25/25",
-                    "promoType":"visualizer",
-                    "songType":"ep"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 9",
-                    "releaseDate": "12/25/25",
-                    "promoType":"visualizer",
-                    "songType":"album"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 10",
-                    "releaseDate": "12/25/25",
-                    "promoType":"visualizer",
-                    "songType":"single"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 11",
-                    "releaseDate": "12/25/25",
-                    "promoType":"visualizer",
-                    "songType":""
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 12",
-                    "releaseDate": "12/25/25",
-                    "promoType":"",
-                    "songType":"ep"
-                },
-
-                {
-                    "artist":"example artist",
-                    "title":"example title 13",
-                    "releaseDate": "12/25/25",
-                    "promoType":"",
                     "songType":"single"
                 }
             ]
         },
 
         {
-            "Kep1er": [
+            "BOYNEXTDOOR": [
                 {
-                    "artist":"Kep1er",
-                    "title":"Japan 1st EP - <AGAINST THE WORLD>",
-                    "releaseDate": "4/14/25",
+                    "artist":"BOYNEXTDOOR",
+                    "title":"I Feel Good",
+                    "releaseDate": "5/13/25",
+                    "promoType": "MV",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "BTS": [
+                {
+                    "artist":"Jin",
+                    "title":"Don't Say You Love Me",
+                    "releaseDate": "5/16/25",
+                    "promoType": "MV",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "DPR ARTIC": [
+                {
+                    "artist":"DPR ARTIC",
+                    "title":"DRIFT",
+                    "releaseDate": "5/9/25",
+                    "promoType": "MV",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "DPR CREAM": [
+                {
+                    "artist":"DPR CREAM",
+                    "title":"DRIFT",
+                    "releaseDate": "5/9/25",
+                    "promoType": "MV",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "EXO": [
+                {
+                    "artist":"BAEKHYUN",
+                    "title":"Chocolate",
+                    "releaseDate": "5/15/25",
                     "promoType": "",
-                    "songType":"EP"
+                    "songType":"single"
+                }, 
+
+                {
+                    "artist":"BAEKHYUN",
+                    "title":"The 5th Mini Album - Essence of Reverie",
+                    "releaseDate": "5/15/25",
+                    "promoType": "MV",
+                    "songType":"album"
+                }
+            ]
+        },
+
+        {
+            "I-dle": [
+                {
+                    "artist":"I-dle",
+                    "title":"Girlfriend",
+                    "releaseDate": "5/9/25",
+                    "promoType": "MV",
+                    "songType":""
+                },
+
+                {
+                    "artist":"I-dle",
+                    "title":"8th Mini Album - [We Are]",
+                    "releaseDate": "5/19/25",
+                    "promoType": "MV",
+                    "songType":"album"
+                }
+            ]
+        },
+
+        {
+            "MONSTA X": [
+                {
+                    "artist":"MONSTA X",
+                    "title":"NOW PROJECT vol.1",
+                    "releaseDate": "5/14/25",
+                    "promoType": "",
+                    "songType":"album"
+                }
+            ]
+        },
+
+        { 
+            "NCT": [
+                {
+                    "artist":"YUTA",
+                    "title":"TWISTED PARADISE",
+                    "releaseDate": "5/14/25",
+                    "promoType": "",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "P1Harmony": [
+                {
+                    "artist":"P1Harmony",
+                    "title":"GOSHA (feat. Karencici)",
+                    "releaseDate": "5/2/25",
+                    "promoType": "MV",
+                    "songType":"single"
+                },
+
+                {
+                    "artist":"P1Harmony",
+                    "title":"8th Mini Album - DUH!",
+                    "releaseDate": "5/8/25",
+                    "promoType": "MV",
+                    "songType":"album"
+                }
+            ]
+        },
+
+        {
+            "RIIZE": [
+                {
+                    "artist":"RIIZE",
+                    "title":"Bag Bad Back",
+                    "releaseDate": "5/1/25",
+                    "promoType": "MV",
+                    "songType":"single"
+                },
+
+                {
+                    "artist":"RIIZE",
+                    "title":"The 1st Album - ODYSSEY",
+                    "releaseDate": "5/19/25",
+                    "promoType": "MV",
+                    "songType":"album"
+                }
+            ]
+        },
+
+        {
+            "SEVENTEEN": [
+                {
+                    "artist":"SEVENTEEN",
+                    "title":"5th Album - HAPPY BURSTDAY",
+                    "releaseDate": "5/26/25",
+                    "promoType": "",
+                    "songType":"album"
+                }
+            ]
+        },
+
+        {
+            "tripleS": [
+                {
+                    "artist":"tripleS",
+                    "title":"Are You Alive",
+                    "releaseDate": "5/12/25",
+                    "promoType": "MV",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "TXT": [
+                {
+                    "artist":"TXT",
+                    "title":"Love Language",
+                    "releaseDate": "5/2/25",
+                    "promoType": "MV",
+                    "songType":"single"
+                },
+
+                {
+                    "artist":"TXT",
+                    "title":"When The Day Comes",
+                    "releaseDate": "5/11/25",
+                    "promoType": "MV",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "XG": [
+                {
+                    "artist":"XG",
+                    "title":"MILLION PLACES",
+                    "releaseDate": "5/14/25",
+                    "promoType": "MV",
+                    "songType":"single"
                 }
             ]
         }
+        
     ]
 }
