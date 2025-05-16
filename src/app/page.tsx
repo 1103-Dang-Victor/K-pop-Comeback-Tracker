@@ -1,9 +1,11 @@
+import { Suspense } from "react";
 import CalendarComponent from "./components/calendar";
 import DarkModeButtonComponent from "./components/darkModeButton";
 import EventCardComponent from "./components/eventCard";
 import FilterComponent from "./components/filterWrapper";
 import FooterComponent from "./components/footer";
 import { FilterProvider } from "./hooks/filterContext";
+import LoadingComponent from "./components/componentLoader";
 
 export default function Home() {
   return (
@@ -23,7 +25,10 @@ export default function Home() {
 
           <div className="border-t-2 border-tBase p-4 w-fit basis-full mt-2">
             <h1 className="font-bold p-2 border-b-2 border-tBase">Results</h1>
-            <EventCardComponent></EventCardComponent>
+
+            <Suspense fallback={<LoadingComponent />}>
+              <EventCardComponent></EventCardComponent>
+            </Suspense>
 
             <FooterComponent></FooterComponent>
           </div>
