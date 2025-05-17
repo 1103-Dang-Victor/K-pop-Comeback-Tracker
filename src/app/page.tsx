@@ -13,15 +13,15 @@ export default async function Home() {
   return (
     <>
       <FilterProvider>
-        <div className="flex flex-row flex-wrap m-1 mt-3">
+        <div className="flex flex-col md:flex-row flex-wrap m-1 mt-3 overflow-x-hidden">
           <DarkModeButtonComponent></DarkModeButtonComponent>
-          <div className={`border-tBase border-2 rounded-lg p-4 w-fit lg:basis-1/2 md:basis-full sm:basis-full
+          <div className={`border-tBase border-2 rounded-lg p-4 w-fit basis-full lg:basis-1/2
             `}>
             <h1 className="font-bold border-b-2 border-tBase">Filters</h1>
             <FilterComponent></FilterComponent>
           </div>
 
-          <div className={`border-tBase border-y-2 border-r-2 rounded-lg lg:basis-1/2 md:basis-full sm:basis-full`}>
+          <div className={`border-tBase border-y-2 border-r-2 rounded-lg shrink md:basis-full lg:basis-1/2`}>
             <CalendarComponent></CalendarComponent>
           </div>
 

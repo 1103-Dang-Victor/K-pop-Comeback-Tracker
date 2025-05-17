@@ -19,7 +19,7 @@ export default function RootLayout({
       </head>
       <body className="m-auto text-xl md:text-lg bg-primary text-tBase duration-250 mt-3 overflow-y-auto">
         <header className="w-fit">
-          <p className="font-bold p-3 text-2xl text-left md:text-xl text-tBase">K-pop Comebacks Tracker</p>
+          <p className="font-bold p-3 text-lg text-left md:text-xl text-tBase">K-pop Comebacks Tracker</p>
         </header>
           <ThemeProvider attribute="class" enableSystem defaultTheme="system">
             {children}

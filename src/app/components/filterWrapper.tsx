@@ -10,14 +10,14 @@ const FilterComponent = () => {
 
     return (
         <> 
-            <div className="flex m-3 p-2 flex-wrap">
+            <div className="flex m-3 p-2 flex-wrap border-4 border-solid border-blue-500">
                 <FilterSearchComponent></FilterSearchComponent>
 
-                <div className="basis-1/2">
-                    <div>
-                        <h1 className="font-bold">Promo Types</h1>
+                <div className="basis-1/2 text-sm md:text-lg">
+                    <div className={'justify-items-center md:justify-items-start'}>
+                        <h1 className="font-bold my-2">Promo Types</h1>
                         
-                        <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
+                        <ToggleButton className={`p-3 m-1 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase
                         ${filterContextState.promoType.includes("mv") ? "bg-accent text-primary font-bold dark:text-tBase" : ""}`}
                             isSelected={filterContextState.promoType.includes("mv")}
@@ -29,7 +29,7 @@ const FilterComponent = () => {
                             }}
                         >MV</ToggleButton>
                         
-                        <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
+                        <ToggleButton className={`p-3 m-1 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase 
                         ${filterContextState.promoType.includes("teaser") ? "bg-accentTwo text-primary font-bold dark:text-tBase" : ""}`}
                             isSelected={filterContextState.promoType.includes("teaser")}
@@ -41,7 +41,7 @@ const FilterComponent = () => {
                             }}
                         >Teaser</ToggleButton>
                         
-                        <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
+                        <ToggleButton className={`p-3 m-1 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase 
                         ${filterContextState.promoType.includes("visualizer") ? "bg-accentThree text-primary font-bold dark:text-tBase" : ""}`}
                             isSelected={filterContextState.promoType.includes("visualizer")}
@@ -55,10 +55,10 @@ const FilterComponent = () => {
                 
                     </div>
 
-                    <div className="songFilterToggles">
-                        <h1 className="font-bold">Song Types</h1>
+                    <div className={'justify-items-center md:justify-items-start'}>
+                        <h1 className="font-bold my-2">Song Types</h1>
                         
-                        <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
+                        <ToggleButton className={`p-3 m-1 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase
                         ${filterContextState.songType.includes("album") ? "bg-secondary font-bold dark:text-tBase" : ""}`}
                         isSelected={filterContextState.songType.includes("album")}
@@ -70,7 +70,7 @@ const FilterComponent = () => {
                         }}
                         >Album</ToggleButton>
                         
-                        <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
+                        <ToggleButton className={`p-3 m-1 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase
                         ${filterContextState.songType.includes("ep") ? "bg-secondaryTwo font-bold dark:text-tBase" : ""}`}
                         isSelected={filterContextState.songType.includes("ep")}
@@ -82,7 +82,7 @@ const FilterComponent = () => {
                         }}
                         >EP</ToggleButton>
                         
-                        <ToggleButton className={`p-3 m-2 b-2 border-2 border-solid rounded-lg border-tBase duration-250
+                        <ToggleButton className={`p-3 m-1 b-2 border-2 border-solid rounded-lg border-tBase duration-250
                         hover:shadow-md hover:shadow-tBase
                         ${filterContextState.songType.includes("single") ? "bg-secondaryThree font-bold dark:text-tBase" : ""}`}
                         isSelected={filterContextState.songType.includes("single")}
@@ -98,7 +98,7 @@ const FilterComponent = () => {
                     
                     <p className={'my-8'}><b>Selected Artists:</b> {filterContextState.artist.join(', ')} </p>
                     
-                    <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
+                    <Button className={`p-3 m-1 border-2 border-solid rounded-full border-tBase justify-self-auto
                         hover:shadow-md hover:shadow-tBase`}
                         onPress={() => {
                             filterContextDispatch({
@@ -108,7 +108,7 @@ const FilterComponent = () => {
                         }}
                         > Apply </Button>
                     
-                    <Button className={`p-3 m-2 border-2 border-solid rounded-full border-tBase
+                    <Button className={`p-3 m-1 border-2 border-solid rounded-full border-tBase justify-self-auto
                         hover:shadow-md hover:shadow-tBase`}
                         onPress={() => {
                             filterContextDispatch({

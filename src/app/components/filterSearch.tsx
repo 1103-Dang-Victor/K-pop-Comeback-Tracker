@@ -26,7 +26,7 @@ const FilterSearchComponent = () => {
                         {Object.entries(artists).map(([artistGroup]) => 
                             <ListBoxItem 
                             className={`p-1 hover:shadow-lg hover:shadow-accent data-[pressed]:bg-accent
-                            rounded-md hover:ring-accent hover:ring-2 md:my-4`} 
+                            rounded-md hover:ring-accent hover:ring-2 my-3 text-md`} 
                             onAction={() => {
                                 filterContextDispatch({
                                     type: ReducerActionType.artistFilterEvent,
