@@ -6,7 +6,7 @@ const FooterComponent = () => {
 
     return (
         <>
-            <p className={'text-center my-4'}> © {currentYear} Victor Dang. All Rights Reserved. </p>
+            <p className={'text-center my-4 text-sm md:text-md'}> © {currentYear} Victor Dang. All Rights Reserved. </p>
         </>
     )
 }

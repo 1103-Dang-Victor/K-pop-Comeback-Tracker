@@ -12,7 +12,7 @@ const CalendarComponent = () => {
             <Calendar aria-label="MainCalendar" className={""}
                 isReadOnly
                 isDateUnavailable={parseValidCalendarDates}>
-                <header className={`w-26 md:w-fit flex p-2 m-3 shrink-2 border-4 border-solid border-blue-500 justify-self-center`}>
+                <header className={`w-25 md:w-fit flex p-2 mx-1 my-2 shrink-2 justify-self-center self-center`}>
                     <Button slot="previous" className={`mx-5 p-3 border-2 border-solid rounded-lg border-tBase text-sm md:text-lg
                         hover:shadow-md hover:shadow-tBase `}>Back</Button>
                     <Heading className="border-b-2 border-tBase text-sm md:text-lg"/> {/*Calendar Month Label*/}

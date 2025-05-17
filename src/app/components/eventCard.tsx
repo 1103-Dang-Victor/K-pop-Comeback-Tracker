@@ -9,7 +9,7 @@ const EventCardComponent = () => {
     const matchedData = applyFiltersLogic();
 
     return  (
-        <div className={'m-2 p-2 min-h-96 text-base md:text-lg w-fit'}>
+        <div className={'mx-auto my-2 p-2 min-h-96 text-base md:text-lg w-fit self-center'}>
             {(filterContextState.artist.length === 0 && filterContextState.promoType.length == 0
             && filterContextState.songType.length === 0) ? <p>No filters selected yet. Please select your filters.</p> 
                 : (filterContextState.filtersActive) ? ( //checking if filters are selected and apply button clicked or not

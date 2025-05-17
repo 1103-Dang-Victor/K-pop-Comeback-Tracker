@@ -10,7 +10,7 @@ const FilterComponent = () => {
 
     return (
         <> 
-            <div className="flex m-3 p-2 flex-wrap border-4 border-solid border-blue-500">
+            <div className="flex m-3 p-2 flex-wrap">
                 <FilterSearchComponent></FilterSearchComponent>
 
                 <div className="basis-1/2 text-sm md:text-lg">
