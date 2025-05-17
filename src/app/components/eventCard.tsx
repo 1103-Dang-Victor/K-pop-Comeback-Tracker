@@ -16,7 +16,7 @@ const EventCardComponent = () => {
                     <>
                         {(matchedData.length > 0) ? (matchedData.map((singleResult) => {
                             return <p key={singleResult.identifier} className={`p-2 mt-2 border-b-2 border-solid rounded-lg
-                            border-tBase hover:shadow-sm hover:shadow-tBase`}><b>{singleResult.value}</b> <br /> 
+                            border-tBase hover:shadow-sm hover:shadow-tBase`}><b>{singleResult.value}</b><br /> 
                                 Releases: {singleResult.releaseDate} <br /> 
                                 Type: <br /><br />{parseCommas(singleResult.includedTypes)} </p>
                         })) : (<p>No Matches Found.</p>)}
