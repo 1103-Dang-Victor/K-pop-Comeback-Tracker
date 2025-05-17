@@ -61,6 +61,18 @@
         },
 
         {
+            "ENHYPHEN": [
+                {
+                    "artist":"ENHYPHEN",
+                    "title":"6th Mini Album - DESIRE: UNLEASH",
+                    "releaseDate": "6/5/25",
+                    "promoType": "",
+                    "songType":"EP"
+                }
+            ]
+        },
+
+        {
             "EXO": [
                 {
                     "artist":"BAEKHYUN",
@@ -75,7 +87,7 @@
                     "title":"The 5th Mini Album - Essence of Reverie",
                     "releaseDate": "5/15/25",
                     "promoType": "MV",
-                    "songType":"album"
+                    "songType":"EP"
                 }
             ]
         },
@@ -95,7 +107,31 @@
                     "title":"8th Mini Album - [We Are]",
                     "releaseDate": "5/19/25",
                     "promoType": "MV",
+                    "songType":"EP"
+                }
+            ]
+        },
+
+        {
+            "ITZY": [
+                {
+                    "artist":"ITZY",
+                    "title":"Album - Girls Will Be Girls",
+                    "releaseDate": "6/9/25",
+                    "promoType": "",
                     "songType":"album"
+                }
+            ]
+        },
+
+        {
+            "KATSEYE": [
+                {
+                    "artist":"KATSEYE",
+                    "title":"2nd EP - Beautiful Chaos",
+                    "releaseDate": "6/27/25",
+                    "promoType": "",
+                    "songType":"EP"
                 }
             ]
         },
@@ -139,7 +175,7 @@
                     "title":"8th Mini Album - DUH!",
                     "releaseDate": "5/8/25",
                     "promoType": "MV",
-                    "songType":"album"
+                    "songType":"EP"
                 }
             ]
         },
@@ -172,6 +208,18 @@
                     "releaseDate": "5/26/25",
                     "promoType": "",
                     "songType":"album"
+                }
+            ]
+        },
+
+        {
+            "STRAY KIDS": [
+                {
+                    "artist":"STRAY KIDS",
+                    "title":"Japan 3rd Mini Album - Hollow",
+                    "releaseDate": "5/18/25",
+                    "promoType": "",
+                    "songType":"EP"
                 }
             ]
         },
