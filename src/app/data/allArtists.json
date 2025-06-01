@@ -1,6 +1,18 @@
 {
     "all": [
         {
+            "ATEEZ": [
+                {
+                    "artist":"ATEEZ",
+                    "title":"Lemon Drop",
+                    "releaseDate": "6/13/25",
+                    "promoType": "",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
             "BLACKSWAN": [
                 {
                     "artist":"BLACKSWAN",
@@ -27,10 +39,10 @@
         {
             "BTS": [
                 {
-                    "artist":"Jin",
-                    "title":"Don't Say You Love Me",
-                    "releaseDate": "5/16/25",
-                    "promoType": "MV",
+                    "artist":"j-hope",
+                    "title":"Killin It Girl' (Feat. GloRilla)",
+                    "releaseDate": "6/13/25",
+                    "promoType": "",
                     "songType":"single"
                 }
             ]
@@ -85,7 +97,7 @@
                 {
                     "artist":"BAEKHYUN",
                     "title":"The 5th Mini Album - Essence of Reverie",
-                    "releaseDate": "5/15/25",
+                    "releaseDate": "5/19/25",
                     "promoType": "MV",
                     "songType":"EP"
                 }
@@ -93,21 +105,13 @@
         },
 
         {
-            "I-dle": [
+            "ILLIT": [
                 {
-                    "artist":"I-dle",
-                    "title":"Girlfriend",
-                    "releaseDate": "5/9/25",
-                    "promoType": "MV",
-                    "songType":""
-                },
-
-                {
-                    "artist":"I-dle",
-                    "title":"8th Mini Album - [We Are]",
-                    "releaseDate": "5/19/25",
-                    "promoType": "MV",
-                    "songType":"EP"
+                    "artist":"ILLIT",
+                    "title":"Do The Dance",
+                    "releaseDate": "6/16/25",
+                    "promoType": "",
+                    "songType":"single"
                 }
             ]
         },
@@ -154,6 +158,14 @@
                     "artist":"YUTA",
                     "title":"TWISTED PARADISE",
                     "releaseDate": "5/14/25",
+                    "promoType": "",
+                    "songType":"single"
+                },
+
+                {
+                    "artist":"DOYOUNG",
+                    "title":"Memory",
+                    "releaseDate": "6/9/25",
                     "promoType": "",
                     "songType":"single"
                 }
@@ -217,7 +229,7 @@
                 {
                     "artist":"STRAY KIDS",
                     "title":"Japan 3rd Mini Album - Hollow",
-                    "releaseDate": "5/18/25",
+                    "releaseDate": "6/18/25",
                     "promoType": "",
                     "songType":"EP"
                 }
@@ -242,14 +254,6 @@
                     "artist":"TXT",
                     "title":"Love Language",
                     "releaseDate": "5/2/25",
-                    "promoType": "MV",
-                    "songType":"single"
-                },
-
-                {
-                    "artist":"TXT",
-                    "title":"When The Day Comes",
-                    "releaseDate": "5/11/25",
                     "promoType": "MV",
                     "songType":"single"
                 }
