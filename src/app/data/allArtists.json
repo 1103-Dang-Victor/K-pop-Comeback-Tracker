@@ -4,70 +4,10 @@
             "ATEEZ": [
                 {
                     "artist":"ATEEZ",
-                    "title":"Lemon Drop",
-                    "releaseDate": "6/13/25",
+                    "title":"Golden Hour: Part 3 In Your Fantasy Edition",
+                    "releaseDate": "7/11/25",
                     "promoType": "",
-                    "songType":"single"
-                }
-            ]
-        },
-
-        {
-            "BLACKSWAN": [
-                {
-                    "artist":"BLACKSWAN",
-                    "title":"I Like It Hot",
-                    "releaseDate": "5/21/25",
-                    "promoType": "",
-                    "songType":"single"
-                }
-            ]
-        },
-
-        {
-            "BOYNEXTDOOR": [
-                {
-                    "artist":"BOYNEXTDOOR",
-                    "title":"I Feel Good",
-                    "releaseDate": "5/13/25",
-                    "promoType": "MV",
-                    "songType":"single"
-                }
-            ]
-        },
-
-        {
-            "BTS": [
-                {
-                    "artist":"j-hope",
-                    "title":"Killin It Girl' (Feat. GloRilla)",
-                    "releaseDate": "6/13/25",
-                    "promoType": "",
-                    "songType":"single"
-                }
-            ]
-        },
-
-        {
-            "DPR ARTIC": [
-                {
-                    "artist":"DPR ARTIC",
-                    "title":"DRIFT",
-                    "releaseDate": "5/9/25",
-                    "promoType": "MV",
-                    "songType":"single"
-                }
-            ]
-        },
-
-        {
-            "DPR CREAM": [
-                {
-                    "artist":"DPR CREAM",
-                    "title":"DRIFT",
-                    "releaseDate": "5/9/25",
-                    "promoType": "MV",
-                    "songType":"single"
+                    "songType":"album"
                 }
             ]
         },
@@ -76,40 +16,8 @@
             "ENHYPHEN": [
                 {
                     "artist":"ENHYPHEN",
-                    "title":"6th Mini Album - DESIRE: UNLEASH",
-                    "releaseDate": "6/5/25",
-                    "promoType": "",
-                    "songType":"EP"
-                }
-            ]
-        },
-
-        {
-            "EXO": [
-                {
-                    "artist":"BAEKHYUN",
-                    "title":"Chocolate",
-                    "releaseDate": "5/15/25",
-                    "promoType": "",
-                    "songType":"single"
-                }, 
-
-                {
-                    "artist":"BAEKHYUN",
-                    "title":"The 5th Mini Album - Essence of Reverie",
-                    "releaseDate": "5/19/25",
-                    "promoType": "MV",
-                    "songType":"EP"
-                }
-            ]
-        },
-
-        {
-            "ILLIT": [
-                {
-                    "artist":"ILLIT",
-                    "title":"Do The Dance",
-                    "releaseDate": "6/16/25",
+                    "title":"JP 4th Single -YOI-",
+                    "releaseDate": "7/29/25",
                     "promoType": "",
                     "songType":"single"
                 }
@@ -117,11 +25,11 @@
         },
 
         {
-            "ITZY": [
+            "GOT7": [
                 {
-                    "artist":"ITZY",
-                    "title":"Album - Girls Will Be Girls",
-                    "releaseDate": "6/9/25",
+                    "artist":"Jackson Wang",
+                    "title":"Album - Magic Man 2",
+                    "releaseDate": "7/18/25",
                     "promoType": "",
                     "songType":"album"
                 }
@@ -129,25 +37,13 @@
         },
 
         {
-            "KATSEYE": [
+            "IVE": [
                 {
-                    "artist":"KATSEYE",
-                    "title":"2nd EP - Beautiful Chaos",
-                    "releaseDate": "6/27/25",
+                    "artist":"IVE",
+                    "title":"JP 3rd EP - Be Alright",
+                    "releaseDate": "7/30/25",
                     "promoType": "",
-                    "songType":"EP"
-                }
-            ]
-        },
-
-        {
-            "MONSTA X": [
-                {
-                    "artist":"MONSTA X",
-                    "title":"NOW PROJECT vol.1",
-                    "releaseDate": "5/14/25",
-                    "promoType": "",
-                    "songType":"album"
+                    "songType":"ep"
                 }
             ]
         },
@@ -155,69 +51,9 @@
         { 
             "NCT": [
                 {
-                    "artist":"YUTA",
-                    "title":"TWISTED PARADISE",
-                    "releaseDate": "5/14/25",
-                    "promoType": "",
-                    "songType":"single"
-                },
-
-                {
-                    "artist":"DOYOUNG",
-                    "title":"Memory",
-                    "releaseDate": "6/9/25",
-                    "promoType": "",
-                    "songType":"single"
-                }
-            ]
-        },
-
-        {
-            "P1Harmony": [
-                {
-                    "artist":"P1Harmony",
-                    "title":"GOSHA (feat. Karencici)",
-                    "releaseDate": "5/2/25",
-                    "promoType": "MV",
-                    "songType":"single"
-                },
-
-                {
-                    "artist":"P1Harmony",
-                    "title":"8th Mini Album - DUH!",
-                    "releaseDate": "5/8/25",
-                    "promoType": "MV",
-                    "songType":"EP"
-                }
-            ]
-        },
-
-        {
-            "RIIZE": [
-                {
-                    "artist":"RIIZE",
-                    "title":"Bag Bad Back",
-                    "releaseDate": "5/1/25",
-                    "promoType": "MV",
-                    "songType":"single"
-                },
-
-                {
-                    "artist":"RIIZE",
-                    "title":"The 1st Album - ODYSSEY",
-                    "releaseDate": "5/19/25",
-                    "promoType": "MV",
-                    "songType":"album"
-                }
-            ]
-        },
-
-        {
-            "SEVENTEEN": [
-                {
-                    "artist":"SEVENTEEN",
-                    "title":"5th Album - HAPPY BURSTDAY",
-                    "releaseDate": "5/26/25",
+                    "artist":"NCT DREAM",
+                    "title":"Go Back To The Future",
+                    "releaseDate": "7/14/25",
                     "promoType": "",
                     "songType":"album"
                 }
@@ -225,25 +61,13 @@
         },
 
         {
-            "STRAY KIDS": [
+            "TWICE": [
                 {
-                    "artist":"STRAY KIDS",
-                    "title":"Japan 3rd Mini Album - Hollow",
-                    "releaseDate": "6/18/25",
+                    "artist":"TWICE",
+                    "title":"THIS IS FOR",
+                    "releaseDate": "7/11/25",
                     "promoType": "",
-                    "songType":"EP"
-                }
-            ]
-        },
-
-        {
-            "tripleS": [
-                {
-                    "artist":"tripleS",
-                    "title":"Are You Alive",
-                    "releaseDate": "5/12/25",
-                    "promoType": "MV",
-                    "songType":"single"
+                    "songType":"album"
                 }
             ]
         },
@@ -252,21 +76,21 @@
             "TXT": [
                 {
                     "artist":"TXT",
-                    "title":"Love Language",
-                    "releaseDate": "5/2/25",
-                    "promoType": "MV",
-                    "songType":"single"
+                    "title":"Album - The Star Chapter: TOGETHER",
+                    "releaseDate": "7/21/25",
+                    "promoType": "",
+                    "songType":"album"
                 }
             ]
-        },
+        }, 
 
         {
-            "XG": [
+            "xikers": [
                 {
-                    "artist":"XG",
-                    "title":"MILLION PLACES",
-                    "releaseDate": "5/14/25",
-                    "promoType": "MV",
+                    "artist":"xikers",
+                    "title":"JP 2nd Single - Up All Night",
+                    "releaseDate": "7/16/25",
+                    "promoType": "",
                     "songType":"single"
                 }
             ]
