@@ -64,8 +64,8 @@
             "TWICE": [
                 {
                     "artist":"TWICE",
-                    "title":"THIS IS FOR",
-                    "releaseDate": "7/11/25",
+                    "title":"JP 6th Album - Enemy",
+                    "releaseDate": "8/27/25",
                     "promoType": "",
                     "songType":"album"
                 }
@@ -92,6 +92,18 @@
                     "releaseDate": "7/16/25",
                     "promoType": "",
                     "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "yves": [
+                {
+                    "artist":"yves",
+                    "title":"3rd EP - [Soft Error]",
+                    "releaseDate": "8/7/25",
+                    "promoType": "",
+                    "songType":"EP"
                 }
             ]
         }
