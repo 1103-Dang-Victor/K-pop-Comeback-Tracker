@@ -1,23 +1,23 @@
 {
     "all": [
         {
-            "ATEEZ": [
+            "AMPERS&ONE": [
                 {
-                    "artist":"ATEEZ",
-                    "title":"Golden Hour: Part 3 In Your Fantasy Edition",
-                    "releaseDate": "7/11/25",
+                    "artist":"AMPERS&ONE",
+                    "title":"3rd Mini Album - LOUD & PROUD",
+                    "releaseDate": "8/12/25",
                     "promoType": "",
-                    "songType":"album"
+                    "songType":"album,ep"
                 }
             ]
         },
 
         {
-            "ENHYPHEN": [
+            "BOYNEXTDOOR": [
                 {
-                    "artist":"ENHYPHEN",
-                    "title":"JP 4th Single -YOI-",
-                    "releaseDate": "7/29/25",
+                    "artist":"BOYNEXTDOOR",
+                    "title":"JP 2nd Single - BOYLIFE",
+                    "releaseDate": "8/20/25",
                     "promoType": "",
                     "songType":"single"
                 }
@@ -25,11 +25,35 @@
         },
 
         {
-            "GOT7": [
+            "KiiiKiii": [
                 {
-                    "artist":"Jackson Wang",
-                    "title":"Album - Magic Man 2",
-                    "releaseDate": "7/18/25",
+                    "artist":"KiiiKiii",
+                    "title":"Single - Dancing Alone",
+                    "releaseDate": "8/6/25",
+                    "promoType": "",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "RED VELVET": [
+                {
+                    "artist":"JOY",
+                    "title":"1st Mini Album - From JOY, With Love",
+                    "releaseDate": "8/18/25",
+                    "promoType": "",
+                    "songType":"album,ep"
+                }
+            ]
+        },
+
+        {
+            "SHINee": [
+                {
+                    "artist":"KEY",
+                    "title":"The 3rd Album - HUNTER",
+                    "releaseDate": "8/11/25",
                     "promoType": "",
                     "songType":"album"
                 }
@@ -37,23 +61,11 @@
         },
 
         {
-            "IVE": [
+            "STRAY KIDS": [
                 {
-                    "artist":"IVE",
-                    "title":"JP 3rd EP - Be Alright",
-                    "releaseDate": "7/30/25",
-                    "promoType": "",
-                    "songType":"ep"
-                }
-            ]
-        },
-
-        { 
-            "NCT": [
-                {
-                    "artist":"NCT DREAM",
-                    "title":"Go Back To The Future",
-                    "releaseDate": "7/14/25",
+                    "artist":"STRAY KIDS",
+                    "title":"The 4th Album - KARMA",
+                    "releaseDate": "8/22/25",
                     "promoType": "",
                     "songType":"album"
                 }
@@ -73,25 +85,13 @@
         },
 
         {
-            "TXT": [
+            "YOUNG POSSE": [
                 {
-                    "artist":"TXT",
-                    "title":"Album - The Star Chapter: TOGETHER",
-                    "releaseDate": "7/21/25",
+                    "artist":"yves",
+                    "title":"4th EP - Growing Pain Pt.1 FREE",
+                    "releaseDate": "8/14/25",
                     "promoType": "",
-                    "songType":"album"
-                }
-            ]
-        }, 
-
-        {
-            "xikers": [
-                {
-                    "artist":"xikers",
-                    "title":"JP 2nd Single - Up All Night",
-                    "releaseDate": "7/16/25",
-                    "promoType": "",
-                    "songType":"single"
+                    "songType":"EP"
                 }
             ]
         },
