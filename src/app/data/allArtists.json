@@ -1,6 +1,18 @@
 {
     "all": [
         {
+            "aespa": [
+                {
+                    "artist":"aespa",
+                    "title":"6th Mini Album - Rich Man",
+                    "releaseDate": "9/5/25",
+                    "promoType": "",
+                    "songType":"album,ep"
+                }
+            ]
+        },
+
+        {
             "AMPERS&ONE": [
                 {
                     "artist":"AMPERS&ONE",
@@ -8,6 +20,18 @@
                     "releaseDate": "8/12/25",
                     "promoType": "",
                     "songType":"album,ep"
+                }
+            ]
+        },
+
+        {
+            "ATEEZ": [
+                {
+                    "artist":"ATEEZ",
+                    "title":"JP 2nd Album - Ashes to Light",
+                    "releaseDate": "8/17/25",
+                    "promoType": "",
+                    "songType":"album"
                 }
             ]
         },
@@ -25,6 +49,18 @@
         },
 
         {
+            "ILLIT": [
+                {
+                    "artist":"ILLIT",
+                    "title":"JP 1st Single - Toki Yo Tomare",
+                    "releaseDate": "9/1/25",
+                    "promoType": "",
+                    "songType":"single"
+                }
+            ]
+        },
+
+        {
             "KiiiKiii": [
                 {
                     "artist":"KiiiKiii",
@@ -32,6 +68,26 @@
                     "releaseDate": "8/6/25",
                     "promoType": "",
                     "songType":"single"
+                }
+            ]
+        },
+
+        {
+            "NCT WISH": [
+                {
+                    "artist":"NCT WISH",
+                    "title":"Pre-release - SURF",
+                    "releaseDate": "8/12/25",
+                    "promoType": "",
+                    "songType":"single"
+                },
+
+                {
+                    "artist":"NCT WISH",
+                    "title":"3rd Mini Album - COLOR",
+                    "releaseDate": "9/1/25",
+                    "promoType": "",
+                    "songType":"album"
                 }
             ]
         },
@@ -80,6 +136,14 @@
                     "releaseDate": "8/27/25",
                     "promoType": "",
                     "songType":"album"
+                },
+
+                {
+                    "artist":"Chaeyong",
+                    "title":"1st Album - LIL FANTASY vol.1 ",
+                    "releaseDate": "9/12/25",
+                    "promoType": "",
+                    "songType":"album"
                 }
             ]
         },
@@ -104,6 +168,18 @@
                     "releaseDate": "8/7/25",
                     "promoType": "",
                     "songType":"EP"
+                }
+            ]
+        },
+
+        {
+            "ZEROBASEONE": [
+                {
+                    "artist":"ZEROBASEONE",
+                    "title":"Pre-release Single - SLAM DUNK",
+                    "releaseDate": "9/1/25",
+                    "promoType": "",
+                    "songType":"single"
                 }
             ]
         }

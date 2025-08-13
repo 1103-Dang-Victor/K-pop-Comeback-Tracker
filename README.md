@@ -29,9 +29,7 @@ If you would like to check the versions you have in the CLI:
 
 ## Feedback and Contact
 
-If you have any feedback or would like to get in touch, you can submit feedback either through the
-- [Artist Suggestions Form or Bug Report Form](https://docs.google.com/forms/d/e/1FAIpQLSejm7yrTRnf2fbPyatAYafIt2R3FDPYQwX1gkVAQ_SDDUop4A/viewform?usp=dialog)
-- or direct email me at vdang@unr.edu
+- contact at vdang@unr.edu
 
 ## Data Sources
 
