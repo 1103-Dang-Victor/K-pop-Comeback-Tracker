@@ -49,6 +49,18 @@
         },
 
         {
+            "CIX": [
+                {
+                    "artist":"CIX",
+                    "title":"8th EP Album: Chapter 1: GO Together",
+                    "releaseDate": "9/8/25",
+                    "promoType": "",
+                    "songType":"album, ep"
+                }
+            ]
+        },
+
+        {
             "ILLIT": [
                 {
                     "artist":"ILLIT",
@@ -86,6 +98,18 @@
                     "artist":"NCT WISH",
                     "title":"3rd Mini Album - COLOR",
                     "releaseDate": "9/1/25",
+                    "promoType": "",
+                    "songType":"album"
+                }
+            ]
+        },
+
+        {
+            "p1harmony": [
+                {
+                    "artist":"p1harmony",
+                    "title":"1st English Album - Game Lovers Club",
+                    "releaseDate": "9/26/25",
                     "promoType": "",
                     "songType":"album"
                 }
